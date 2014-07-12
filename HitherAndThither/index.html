@@ -27,16 +27,14 @@ var map = new Datamap({
 
 var time = 100;
 
-d3.csv('data/countries.csv', function(error, data) {
+d3.csv('data/countries.csv', function(error, csvData) {
 
-  var countries = data
+  var countries = csvData
     .filter(function (c) {
       return c.country.indexOf("Total") < 0 && c.country.indexOf("Other") < 0;
     })
   countries
     .forEach(function (c) {
-      c.radius = 10;
-      c.fillKey = "bubble";
       var coord = map.latLngToXY(c.latitude,c.longitude);
       c.x = coord[0];
       c.y = coord[1];
@@ -54,34 +52,23 @@ d3.csv('data/countries.csv', function(error, data) {
       .attr("opacity", 0.7)
       .attr("stroke", "white")
       .attr("stroke-width", 2)
-      .attr("r", 10)
+      .attr("r", 0)
       .style("fill", "#f1f")
-      .append("title").text(function(c) { return c.country; });
+      .each(function () { d3.select(this).append("title").text(function(c) { return c.country; }) });
 
-  d3.csv('data/340109.csv', function(error, data) {
-    data.forEach(function (m, i) {
-      console.log(i);
-    // var m = data[0], i = 0;
+  d3.csv('data/340109.csv', function(error, months) {
+    months.forEach(function (m, i) {
       cc.transition()
         .delay(1.5 * i * time)
         .duration(time)
         .attr("r", function(d) { return bsize(m[d.country]); });
-      
-/*
-      countries.forEach(function (c) { c.radius = bsize(m[c.country]);
-console.log(map.latLngToXY(c.latitude,c.longitude));
- });
-*/
-
-      // map.bubbles(countries);
-
     })
   })
 
 })
 
 function bsize(n) {
-  return n < 100000 ? Math.log(1+n) : 50;
+  return n < 100000 ? Math.log(1+n)/Math.log(1.6) : 50;
 }
 
 // map.bubbles(bombs, {});
