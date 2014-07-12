@@ -3,26 +3,44 @@
 <script src="d3/d3.v3.min.js"></script>
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<h1>Hither and Thither</h1>
-<span id="date">None</span>
-<div id="container" style="position: relative; width: 95%; height: 95%;">
+<h1>Hither and Thither  <span id="date">None</span></h1>
+<div id="container" style="position: relative; width: 1000; height: 600;">
 </div>
 <script>
-var width=document.getElementById("container").offsetWidth,
-    height=document.getElementById("container").offsetHeight,
-    projection = d3.geo
-                   .mercator()
-                   .scale(150)
-                   .translate([width / 2, height / 2]);
-var path = d3.geo
-             .path()
-             .pointRadius(2)
-             .projection(projection);
 
 var map = new Datamap({
   element: document.getElementById('container'),
   projection: 'mercator',
-  fills: { "bubble": "#1ff", "x": "#f1f" },
+  setProjection: function(element, options) {
+            var projection, path;
+            projection = d3.geo.mercator()
+                //.center([125, 0])
+                //.scale(element.offsetWidth)
+                .rotate([-160,5])
+                //.translate([element.offsetWidth / 2, element.offsetHeight / 2])
+;
+
+            path = d3.geo.path()
+                .pointRadius(2)
+                .projection( projection );
+
+            return {path: path, projection: projection};
+        },
+  fills: { defaultFill: '#ABDDA4', "bubble": "#1ff", "x": "#f1f" },
+  geographyConfig: {
+        dataUrl: null, //if not null, datamaps will fetch the map JSON (currently only supports topojson)
+        hideAntarctica: false,
+        borderWidth: 1,
+        borderColor: '#FDFDFD',
+        popupTemplate: function(geography, data) { //this function should just return a string
+          return '<div class="hoverinfo"><strong>' + geography.properties.name + '</strong></div>';
+        },
+        popupOnHover: true, //disable the popup while hovering
+        highlightOnHover: true,
+        highlightFillColor: '#FC8D59',
+        highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
+        highlightBorderWidth: 2
+    },
   bubbleConfig: {
             borderWidth: 2,
             borderColor: '#FFFFFF',
@@ -38,8 +56,6 @@ var map = new Datamap({
             highlightFillOpacity: 0.85
         }
 });
-
-var time = 100;
 
 d3.csv('data/countries.csv', function(error, csvData) {
 
@@ -57,21 +73,14 @@ d3.csv('data/countries.csv', function(error, csvData) {
     });
   // map.bubbles(countries);
 
-console.log(path({type: "LineString", coordinates: [[-25.27439, 133.775136], [-25,100]]}));
-
   var g = d3.select("svg").append("g");
   var dd = d3.select("#date");
   var pp = g.selectAll(".route")
     .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
     .enter()
       .append("path")
-/*
-        .datum(function (c) { // var p = ""; console.log(p);
-          return {type: "LineString", coordinates: [[-25.27439, 133.775136], [c.latitude,c.longitude]]}; })
-*/
         .attr("class", "route")
-        .attr("fill", "none")
-        .attr("stroke", "#ff1")
+        .attr("stroke", "#1f1")
         .attr("stroke-width", 20)
         .attr("d", function(c) { return "M "+aus[0]+" "+aus[1]+" L "+c.x+" "+c.y; });
 
@@ -89,15 +98,64 @@ console.log(path({type: "LineString", coordinates: [[-25.27439, 133.775136], [-2
       .style("fill", "#f1f")
       .each(function () { d3.select(this).append("title").text(function(c) { return c.country; }) });
 
+  var ff = g.selectAll(".fly")
+    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
+    .enter()
+      .append("circle")
+      .attr("class", "fly")
+      .attr("cx", aus[0])
+      .attr("cy", aus[1])
+      .attr("opacity", 0.7)
+      .attr("stroke", "black")
+      .attr("stroke-width", 1)
+      .attr("r", 5)
+      .style("fill", "#1ff");
+
+  var flyTime = 1000, growTime = 1000, resetTime = 100, time = resetTime+flyTime+growTime, delta = 1;
+
   d3.csv('data/340109.csv', function(error, months) {
-    months.forEach(function (m, i) {
+    months
+      // .filter(function (m, i) { return i < 40; })
+      .forEach(function (m, i) {
+console.log("M: " + i + " " + (i*time) + " " + (resetTime+(i*time)) + " " + (flyTime+(i*time)));
+      // change month
       dd.transition()
-        .delay(1.5 * i * time)
+        .delay(i*time)
         .text(m.month);
+
+      // fly to destination
+      ff.transition()
+        .delay(resetTime+(i*time))
+        .duration(flyTime)
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 3)
+        .each("start", function () {
+          // reset to Australia
+          d3.select(this)
+            .attr("r", 5)
+            .attr("cx", aus[0])
+            .attr("cy", aus[1]);
+        })
+        .each("end", function () {
+          // shrink at end
+          d3.select(this)
+            .attr("r", 2);
+        });
+
+      // fade destination
       cc.transition()
-        .delay(1.5 * i * time)
-        .duration(time)
+        .delay((i*time))
+        .duration(flyTime)
+        .attr("opacity", 0.1);
+
+      // resize destination
+      cc.transition()
+        .delay(flyTime+(i*time))
+        .duration(growTime)
+        .attr("opacity", 0.7)
         .attr("r", function(d) { return bsize(m[d.country]); });
+
     })
   })
 
