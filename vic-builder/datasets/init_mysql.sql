@@ -48,5 +48,7 @@ CREATE TABLE vba (
 	BASIS_BCA varchar(255),
 	BASIS_OwnershipSector varchar(255),
 	BASIS_OwnerBuilder varchar(255),
+	latitude FLOAT(9,6),
+	longitude FLOAT(9,6),
 	PRIMARY KEY (id)
 );

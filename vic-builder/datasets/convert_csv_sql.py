@@ -114,6 +114,7 @@ with open(sys.argv[1], 'rb') as csvfile:
 
 		#print "%s %s %s %s, %s, %s" % (parsed_permit_date, parsed_permit_app_date, row[Allotment_Area], row[Site_street], row[Site_suburb], row[site_pcode])
 
+		# Insert additional values: auto-incrementing ID field, latitude and longitude
 		values = ", ".join(row)
-		print "INSERT INTO vba VALUES (0, %s);" % (values)
+		print "INSERT INTO vba VALUES (0, %s, NULL, NULL);" % (values)
 
