@@ -2,8 +2,9 @@
 <script src="d3/d3.v3.min.js"></script>
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
+<div id="container" style="position: relative; width: 95%; height: 95%;">
 <h1>Hither and Thither</h1>
-<div id="container" style="position: relative; width: 800px; height: 500px;"></div>
+</div>
 <script>
 var map = new Datamap({
   element: document.getElementById('container'),
@@ -24,45 +25,63 @@ var map = new Datamap({
         }
 });
 
-d3.csv('data/countries.csv', function(error, countries) {
+var time = 100;
 
-  countries.forEach(function (c) {
-    c.radius = 10;
-    c.fillKey = "bubble";
-    var coord = map.latLngToXY(c.latitude,c.longitude);
-    c.x = coord[0];
-    c.y = coord[1];
-  });
+d3.csv('data/countries.csv', function(error, data) {
+
+  var countries = data
+    .filter(function (c) {
+      return c.country.indexOf("Total") < 0 && c.country.indexOf("Other") < 0;
+    })
+  countries
+    .forEach(function (c) {
+      c.radius = 10;
+      c.fillKey = "bubble";
+      var coord = map.latLngToXY(c.latitude,c.longitude);
+      c.x = coord[0];
+      c.y = coord[1];
+    });
   // map.bubbles(countries);
 
-  var cc = d3.select("svg").data(countries, function(c) { console.log(c); return c.country; })
+  var g = d3.select("svg").append("g");
+  var cc = g.selectAll(".bub")
+    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
     .enter()
       .append("circle")
+      .attr("class", "bub")
       .attr("cx", function (c) { return c.x; })
       .attr("cy", function (c) { return c.y; })
-      .attr("r", 0)
-      .style("fill", "#f1f");
+      .attr("opacity", 0.7)
+      .attr("stroke", "white")
+      .attr("stroke-width", 2)
+      .attr("r", 10)
+      .style("fill", "#f1f")
+      .append("title").text(function(c) { return c.country; });
 
   d3.csv('data/340109.csv', function(error, data) {
-    // data.forEach(function (m, i) {
-    var m = data[0], i = 0;
-      countries.forEach(function (c) { c.fillKey="x"; c.radius = bsize(m[c.country]);
+    data.forEach(function (m, i) {
+      console.log(i);
+    // var m = data[0], i = 0;
+      cc.transition()
+        .delay(1.5 * i * time)
+        .duration(time)
+        .attr("r", function(d) { return bsize(m[d.country]); });
+      
+/*
+      countries.forEach(function (c) { c.radius = bsize(m[c.country]);
 console.log(map.latLngToXY(c.latitude,c.longitude));
  });
+*/
+
       // map.bubbles(countries);
 
-    // m = data[0];
-      countries.forEach(function (c) { c.radius = 10+bsize(m[c.country]); });
-console.log("XXX");
-      map.bubbles(countries);
-console.log("YYY");
-    // })
+    })
   })
 
 })
 
 function bsize(n) {
-  return n < 1000 ? 5 : 20;
+  return n < 100000 ? Math.log(1+n) : 50;
 }
 
 // map.bubbles(bombs, {});
