@@ -61,6 +61,9 @@ var ausLat = [-25.27439, 133.775136],
     }
 });
 
+var dd = d3.select("#date");
+
+var g = d3.select("svg").append("g");
 
 d3.csv('data/countries.csv', function(error, csvData) {
   d3.csv('data/340105.csv', function(error, arrivalsMonths) {
@@ -76,9 +79,6 @@ d3.csv('data/countries.csv', function(error, csvData) {
   })
 })
 
-var dd, cc, ff;
-dd = d3.select("#date");
-
 function process(csvData, months, arrivals) {
   var countries = csvData
     .filter(function (c) {
@@ -93,12 +93,6 @@ function process(csvData, months, arrivals) {
       c.y = coord[1];
     });
 
-  if (dd) dd.interrupt().transition();
-  if (ff) ff.interrupt().transition();
-  if (cc) cc.interrupt().transition();
-  // d3.timer.flush();
-
-  var g = d3.select("svg").append("g");
 /*
   var pp = g.selectAll(".route")
     .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
@@ -111,8 +105,11 @@ function process(csvData, months, arrivals) {
 */
 
   var bub = g.selectAll(".bub")
-    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} });
-  cc = bub
+    .data(countries, function(c,i) { return c.country; });
+
+  bub.interrupt().transition();
+
+  bub
     .enter()
       .append("circle")
       .attr("class", "bub")
@@ -124,11 +121,17 @@ function process(csvData, months, arrivals) {
       .attr("r", 0)
       .style("fill", "#f1f")
       .each(function () { d3.select(this).append("title").text(function(c) { return c.country; }) });
-  bub.exit().remove();
+
+  bub.exit()
+    .each(function(d) {console.log(d.country);})
+    .remove();
 
   var fly = g.selectAll(".fly")
-    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} });
-  ff = fly
+    .data(countries, function(c,i) { return c.country; });
+
+  fly.interrupt().transition();
+
+  fly
     .enter()
       .append("circle")
       .attr("class", "fly")
@@ -139,7 +142,8 @@ function process(csvData, months, arrivals) {
       .attr("stroke-width", 1)
       .attr("r", 5)
       .style("fill", "#1ff");
-  fly.exit().remove();
+  fly.exit()
+    .remove();
 
   var flyTime = 1000, growTime = 1000, resetTime = 100, time = resetTime+flyTime+growTime, delta = 1;
 
@@ -151,7 +155,7 @@ function process(csvData, months, arrivals) {
         .text((arrivals ? "Inbound visitors in " : "Outbound Aussies in ") + m.month);
 
       // fly to destination
-      ff.transition()
+      fly.transition()
         .delay(resetTime+(i*time))
         .duration(flyTime)
         .attr("cx", function(d) { return arrivals ? aus[0] : d.x; })
@@ -171,13 +175,13 @@ function process(csvData, months, arrivals) {
         });
 
       // fade destination
-      cc.transition()
+      bub.transition()
         .delay((i*time))
         .duration(flyTime)
         .attr("opacity", 0.1);
 
       // resize destination
-      cc.transition()
+      bub.transition()
         .delay(flyTime+(i*time))
         .duration(growTime)
         .attr("opacity", 0.7)
@@ -189,8 +193,6 @@ function process(csvData, months, arrivals) {
 function bsize(n) {
   return typeof n === "undefined" ? 0 : (n < 100000 ? Math.log(1+n)/Math.log(1.6) : 50);
 }
-
-// map.bubbles(bombs, {});
 
 </script>
 
