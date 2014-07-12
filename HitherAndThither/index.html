@@ -5,8 +5,15 @@
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
 <h1>Hither and Thither: <span id="date">None</span></h1>
-  <input type="radio" name="direction" id="arrivalDir" value="Arrivals" checked>Arrivals
-  <input type="radio" name="direction" id="departureDir" value="Departures">Departures
+<table width="600"><tr>
+<td>
+  <input type="radio" name="direction" id="departureDir" value="Departures" checked>Departures
+  <input type="radio" name="direction" id="arrivalDir" value="Arrivals">Arrivals
+<td>
+  <input type="radio" name="period" id="monthP" value="Month">Months
+  <input type="radio" name="period" id="allP" value="Both" checked>Months &amp; Years
+  <input type="radio" name="period" id="yearP" value="Year">Years
+</table>
 <div id="container" style="position: relative; width: 95%; height: 80%;">
 </div>
 <script>
@@ -65,16 +72,99 @@ var dd = d3.select("#date");
 
 var g = d3.select("svg").append("g");
 
+function computeYearly(months) {
+  var years = [], currentY = "", totals, count = 0;
+
+  months.forEach(function (m) {
+    var y = m.month.substr(4);
+
+    if (currentY != y) {
+      if (typeof totals !== "undefined") { normalise(totals, count); years.push(totals); }
+      totals = {"month": y};
+      count = 0;
+      currentY = y;
+    }
+
+    Object.keys(m)
+      .filter(function (k) { return "month" !== k; })
+      .forEach(function (k) {
+        totals[k] = parseInt(m[k]) + (totals[k] || 0);
+      });
+    count++;
+  });
+
+  normalise(totals, count);
+  years.push(totals);
+
+  return years;
+}
+
+function computeMonthly(months) {
+  var lbls = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var monthly = [], currentM = "", totals={}, count = {};
+
+  lbls.forEach(function(l) {
+    totals[l] = {month: l};
+    count[l] = 0;
+  });
+
+  months.forEach(function (m) {
+    var l = m.month.substr(0,3);
+
+    Object.keys(m)
+      .filter(function (k) { return "month" !== k; })
+      .forEach(function (k) {
+        totals[l][k] = parseInt(m[k]) + (totals[l][k] || 0);
+      });
+    count[l]++;
+  });
+
+  lbls.forEach(function(l) {
+    normalise(totals[l], count[l]);
+    monthly.push(totals[l]);
+  });
+
+  return monthly;
+}
+
+function normalise(totals, count) {
+  Object.keys(totals)
+    .filter(function (k) { return "month" !== k; })
+    .forEach(function (k) {
+      totals[k] = totals[k] / count;
+    });
+}
+
+function getPeriod() {
+  var result = 1;
+
+  if (mP = document.getElementById("monthP").checked) { result = 0; }
+  if (yP = document.getElementById("yearP").checked) { result = 2; }
+  
+  return result;
+}
+
 d3.csv('data/countries.csv', function(error, csvData) {
   d3.csv('data/340105.csv', function(error, arrivalsMonths) {
     d3.csv('data/340109.csv', function(error, departuresMonths) {
+      var arrivalsYears = computeYearly(arrivalsMonths);
+      var departuresYears = computeYearly(departuresMonths);
+
+      var inputData = [
+        [computeMonthly(arrivalsMonths), computeMonthly(departuresMonths)],
+        [arrivalsMonths, departuresMonths],
+        [arrivalsYears, departuresYears]
+      ];
+
       d3.selectAll("input").on("change", function () {
+        var p = getPeriod();
         var arrivals = document.getElementById("arrivalDir").checked;
-        process(csvData, arrivals ? arrivalsMonths : departuresMonths, arrivals);
+        process(csvData, arrivals ? inputData[p][0] : inputData[p][1], arrivals);
       });
 
+      var p = getPeriod();
       var arrivals = document.getElementById("arrivalDir").checked;
-      process(csvData, arrivals ? arrivalsMonths : departuresMonths, arrivals);
+      process(csvData, arrivals ? inputData[p][0] : inputData[p][1], arrivals);
     })
   })
 })
