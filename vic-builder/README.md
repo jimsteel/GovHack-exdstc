@@ -12,7 +12,7 @@ Convert to CSV:
 * Install XQuartz (http://xquartz.macosforge.org/)
 * Install Gnumeric (brew install gnumeric)
 
-ssconvert file.xls file.csv
+% ssconvert file.xls file.csv
 
 
 Geocoding
@@ -28,4 +28,30 @@ Beavers Road, Northcote VIC 3070, Australia
 -37.7659143
 >>> print longitude
 144.9917278
+
+
+CherryPy
+--------
+
+% sudo apt-get install python-setuptools
+% sudo easy_install cherrypy
+
+mod_python
+----------
+
+% apt-get install libapache2-mod-python
+
+% sudo vi /etc/apache2/sites-available/000-default.conf
+Added:
+               AddHandler mod_python .py
+                PythonHandler mod_python.publisher
+                PythonDebug On
+
+
+#!/usr/bin/python
+
+def index(req):
+  return "Test successful";
+
+
 

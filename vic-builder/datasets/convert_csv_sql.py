@@ -69,15 +69,19 @@ with open(sys.argv[1], 'rb') as csvfile:
 			continue
 
 		d = time.strptime(row[permit_date], "%d/%m/%Y")
-		row[permit_date] = time.strftime("%Y-%m-%d", d)
+		row[permit_date] = '"%s"' % (time.strftime("%Y-%m-%d", d))
 
 		try:
 			d = time.strptime(row[Permit_app_date], "%d/%m/%Y")
-			row[Permit_app_date] = time.strftime("%Y-%m-%d", d)
+			row[Permit_app_date] = '"%s"' % (time.strftime("%Y-%m-%d", d))
 		except:
 			row[Permit_app_date] = "NULL"
 
 		for i in xrange(0, len(row)):
+
+			# Strip all quotes
+			if i != permit_date and i != Permit_app_date:
+				row[i] = row[i].replace('"', '')
 
 			# These fields can be numeric with spaces ("3    4") so escape them
 			if i == Nature_of_work or i == Building_classification_1:
