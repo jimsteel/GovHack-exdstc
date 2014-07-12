@@ -37,7 +37,7 @@ var ausLat = [-25.27439, 133.775136],
 
             return {path: path, projection: projection};
         },
-  fills: { defaultFill: '#ABDDA4', "bubble": "#1ff", "x": "#f1f" },
+  fills: { defaultFill: '#ABDDA4' },
   geographyConfig: {
         dataUrl: null, //if not null, datamaps will fetch the map JSON (currently only supports topojson)
         hideAntarctica: false,
@@ -51,20 +51,6 @@ var ausLat = [-25.27439, 133.775136],
         highlightFillColor: '#FC8D59',
         highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
         highlightBorderWidth: 2
-    },
-  bubbleConfig: {
-        borderWidth: 2,
-        borderColor: '#FFFFFF',
-        popupOnHover: false,
-        popupTemplate: function(geography, data) {
-          return '<div class="hoverinfo"><strong>' + data.name + '</strong></div>';
-        },
-        fillOpacity: 0.75,
-        highlightOnHover: true,
-        highlightFillColor: '#FC8D59',
-        highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-        highlightBorderWidth: 2,
-        highlightFillOpacity: 0.85
     }
 });
 
@@ -221,6 +207,8 @@ function process(csvData, months, arrivals) {
 
   pp.exit().remove();
 
+  var def = {r: 1, c: "gray", po: 0.1, bo: 0.2};
+
   var bub = g.selectAll(".bub")
     .data(countries, function(c,i) { return c.country; });
 
@@ -235,7 +223,7 @@ function process(csvData, months, arrivals) {
       .attr("opacity", 0.7)
       .attr("stroke", "white")
       .attr("stroke-width", 2)
-      .attr("r", 0)
+      .attr("r", def.r)
       .style("fill", "#f1f")
       .each(function () { d3.select(this).append("title").text(function(c) { return c.country; }) });
 
@@ -253,11 +241,11 @@ function process(csvData, months, arrivals) {
       .attr("class", "fly")
       .attr("cx", aus[0])
       .attr("cy", aus[1])
-      .attr("opacity", 0.7)
-      .attr("stroke", "black")
-      .attr("stroke-width", 1)
-      .attr("r", 5)
-      .style("fill", "#1ff");
+      .attr("opacity", def.bo)
+      // .attr("stroke", "black")
+      // .attr("stroke-width", 1)
+      .attr("r", def.r)
+      .style("fill", def.c);
   fly.exit()
     .remove();
 
@@ -288,12 +276,12 @@ function process(csvData, months, arrivals) {
         .duration(flyTime)
         .attr("cx", function(d) { return arrivals ? aus[0] : d.x; })
         .attr("cy", function(d) { return arrivals ? aus[1] : d.y; })
-            .attr("r", function(d) { return bsize(m[d.country])/2; })
+            .attr("r", function(d) { return bsize(m[d.country])/1.2; })
         //.attr("r", 3)
         .each("start", function () {
           // reset to Australia
           d3.select(this)
-            .attr("opacity", 0.7)
+            .attr("opacity", def.po)
             .attr("r", 5)
             .attr("cx", function(d) { return arrivals ? d.x : aus[0]; })
             .attr("cy", function(d) { return arrivals ? d.y : aus[1]; });
@@ -301,8 +289,8 @@ function process(csvData, months, arrivals) {
         .each("end", function () {
           // shrink at end
           d3.select(this)
-            .attr("opacity", 0.3)
-            .attr("r", function(d) { return bsize(m[d.country])/2; });
+            .attr("opacity", 0)//def.bo)
+            .attr("r", function(d) { return bsize(m[d.country])/4; });
             //.attr("r", 2);
         });
 
