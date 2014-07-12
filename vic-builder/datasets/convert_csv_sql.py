@@ -79,6 +79,14 @@ with open(sys.argv[1], 'rb') as csvfile:
 
 		for i in xrange(0, len(row)):
 
+			# These fields can be numeric with spaces ("3    4") so escape them
+			if i == Nature_of_work or i == Building_classification_1:
+				row[i] = '"%s"' % (row[i])
+
+			# A small number of fields just have "-"
+			if row[i] == "-":
+				row[i] = "NULL"
+
 			if any(c.isalpha() for c in row[i]):
 
 				# Put quotes around strings
@@ -90,6 +98,9 @@ with open(sys.argv[1], 'rb') as csvfile:
 
 				# Strip commas from numbers
 				row[i] = row[i].replace(",", "")
+
+				# Strip spaces
+				row[i] = row[i].replace(" ", "")
 
 			# Empty values
 			if row[i] == "":
