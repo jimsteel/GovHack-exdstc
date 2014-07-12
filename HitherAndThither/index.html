@@ -4,7 +4,9 @@
 <script src="d3/d3.v3.min.js"></script>
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<h1>Hither and Thither  <span id="date">None</span></h1>
+<h1>Hither and Thither: <span id="date">None</span></h1>
+  <input type="radio" name="direction" id="arrivalDir" value="Arrivals" checked>Arrivals
+  <input type="radio" name="direction" id="departureDir" value="Departures">Departures
 <div id="container" style="position: relative; width: 95%; height: 80%;">
 </div>
 <script>
@@ -59,11 +61,25 @@ var ausLat = [-25.27439, 133.775136],
     }
 });
 
-var arrivals = false;
+var dd = d3.select("#date");
+
+var g = d3.select("svg").append("g");
 
 d3.csv('data/countries.csv', function(error, csvData) {
-  d3.csv(arrivals ? 'data/340105.csv' : 'data/340109.csv', function(error, months) {
+  d3.csv('data/340105.csv', function(error, arrivalsMonths) {
+    d3.csv('data/340109.csv', function(error, departuresMonths) {
+      d3.selectAll("input").on("change", function () {
+        var arrivals = document.getElementById("arrivalDir").checked;
+        process(csvData, arrivals ? arrivalsMonths : departuresMonths, arrivals);
+      });
 
+      var arrivals = document.getElementById("arrivalDir").checked;
+      process(csvData, arrivals ? arrivalsMonths : departuresMonths, arrivals);
+    })
+  })
+})
+
+function process(csvData, months, arrivals) {
   var countries = csvData
     .filter(function (c) {
       return typeof months[0][c.country] !== "undefined" && c.country.indexOf("Total") < 0 && c.country.indexOf("Other") < 0;
@@ -77,8 +93,6 @@ d3.csv('data/countries.csv', function(error, csvData) {
       c.y = coord[1];
     });
 
-  var g = d3.select("svg").append("g");
-  var dd = d3.select("#date");
 /*
   var pp = g.selectAll(".route")
     .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
@@ -90,8 +104,12 @@ d3.csv('data/countries.csv', function(error, csvData) {
         .attr("d", function(c) { return "M "+aus[0]+" "+aus[1]+" L "+c.x+" "+c.y; });
 */
 
-  var cc = g.selectAll(".bub")
-    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
+  var bub = g.selectAll(".bub")
+    .data(countries, function(c,i) { return c.country; });
+
+  bub.interrupt().transition();
+
+  bub
     .enter()
       .append("circle")
       .attr("class", "bub")
@@ -104,8 +122,16 @@ d3.csv('data/countries.csv', function(error, csvData) {
       .style("fill", "#f1f")
       .each(function () { d3.select(this).append("title").text(function(c) { return c.country; }) });
 
-  var ff = g.selectAll(".fly")
-    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
+  bub.exit()
+    .each(function(d) {console.log(d.country);})
+    .remove();
+
+  var fly = g.selectAll(".fly")
+    .data(countries, function(c,i) { return c.country; });
+
+  fly.interrupt().transition();
+
+  fly
     .enter()
       .append("circle")
       .attr("class", "fly")
@@ -116,19 +142,20 @@ d3.csv('data/countries.csv', function(error, csvData) {
       .attr("stroke-width", 1)
       .attr("r", 5)
       .style("fill", "#1ff");
+  fly.exit()
+    .remove();
 
   var flyTime = 1000, growTime = 1000, resetTime = 100, time = resetTime+flyTime+growTime, delta = 1;
 
-    months
-      // .filter(function (m, i) { return i < 40; })
-      .forEach(function (m, i) {
+  months
+    .forEach(function (m, i) {
       // change month
       dd.transition()
         .delay(i*time)
-        .text(m.month);
+        .text((arrivals ? "Inbound visitors in " : "Outbound Aussies in ") + m.month);
 
       // fly to destination
-      ff.transition()
+      fly.transition()
         .delay(resetTime+(i*time))
         .duration(flyTime)
         .attr("cx", function(d) { return arrivals ? aus[0] : d.x; })
@@ -148,28 +175,35 @@ d3.csv('data/countries.csv', function(error, csvData) {
         });
 
       // fade destination
-      cc.transition()
+      bub.transition()
         .delay((i*time))
         .duration(flyTime)
         .attr("opacity", 0.1);
 
       // resize destination
-      cc.transition()
+      bub.transition()
         .delay(flyTime+(i*time))
         .duration(growTime)
         .attr("opacity", 0.7)
+        .style("fill", function (d) {
+          var thisSize = bsize(m[d.country]),
+              prevSize = i == 0 ? thisSize : bsize(months[i-1][d.country]);
+          if (thisSize / prevSize > 1.1) {
+            return "#f11";
+          } else if (thisSize / prevSize < 0.9) {
+            return "#11f";
+          } else {
+            return "#ff1";
+          }
+        })
         .attr("r", function(d) { return bsize(m[d.country]); });
 
     })
-  })
-
-})
+}
 
 function bsize(n) {
   return typeof n === "undefined" ? 0 : (n < 100000 ? Math.log(1+n)/Math.log(1.6) : 50);
 }
-
-// map.bubbles(bombs, {});
 
 </script>
 
