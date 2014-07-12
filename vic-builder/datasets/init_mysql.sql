@@ -1,4 +1,5 @@
 CREATE TABLE vba (
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
 	permit_stage_number INT,
 	permit_date DATE,
 	Levy_return_year varchar(255),
@@ -46,5 +47,6 @@ CREATE TABLE vba (
 	BASIS_NOW varchar(255),
 	BASIS_BCA varchar(255),
 	BASIS_OwnershipSector varchar(255),
-	BASIS_OwnerBuilder varchar(255)
+	BASIS_OwnerBuilder varchar(255),
+	PRIMARY KEY (id)
 );

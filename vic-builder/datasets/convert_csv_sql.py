@@ -115,5 +115,5 @@ with open(sys.argv[1], 'rb') as csvfile:
 		#print "%s %s %s %s, %s, %s" % (parsed_permit_date, parsed_permit_app_date, row[Allotment_Area], row[Site_street], row[Site_suburb], row[site_pcode])
 
 		values = ", ".join(row)
-		print "INSERT INTO vba VALUES (%s);" % (values)
+		print "INSERT INTO vba VALUES (0, %s);" % (values)
 
