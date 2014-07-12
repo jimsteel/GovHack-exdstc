@@ -1,0 +1,2952 @@
+{
+  "rows": [
+    {
+      "program": "Carbon Farming Futures - Action on the Ground",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 8.073,
+      "exp2012_13": 7.08,
+      "exp2013_14": 22.952
+    },
+    {
+      "program": "Carbon Farming Futures - Filling the Research Gap",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 17.628,
+      "exp2012_13": 8.11,
+      "exp2013_14": 51.876
+    },
+    {
+      "program": "Carbon Farming Futures - Extension and Outreach",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.972,
+      "exp2012_13": 5.348,
+      "exp2013_14": 16.462
+    },
+    {
+      "program": "Carbon Farming Initiative",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.284,
+      "exp2011_12": 1.984,
+      "exp2012_13": 2.2,
+      "exp2013_14": 1.2
+    },
+    {
+      "program": "Centres of Excellence - Biosecurity Risk Analysis and Research",
+      "exp2004_05": 0.4,
+      "exp2005_06": 1.7,
+      "exp2006_07": 1.7,
+      "exp2007_08": 1.7,
+      "exp2008_09": 1.689,
+      "exp2009_10": 1.689,
+      "exp2010_11": 1.689,
+      "exp2011_12": 1.719,
+      "exp2012_13": 1.756,
+      "exp2013_14": 1.784
+    },
+    {
+      "program": "Centres of Excellence - National Food Industry Strategy",
+      "exp2004_05": 3.4,
+      "exp2005_06": 2.4,
+      "exp2006_07": 2.3,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Animal Welfare, Biosecurity and Exotic Disease Preparedness Programs b",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.055,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.082,
+      "exp2009_10": 0.02,
+      "exp2010_11": 0.125,
+      "exp2011_12": 0.208,
+      "exp2012_13": 0.162,
+      "exp2013_14": 0.165
+    },
+    {
+      "program": "Climate Change Research Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 10.0,
+      "exp2009_10": 15.0,
+      "exp2010_11": 15.0,
+      "exp2011_12": 6.185,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Fisheries Resources Research Fund",
+      "exp2004_05": 3.84,
+      "exp2005_06": 3.065,
+      "exp2006_07": 3.076,
+      "exp2007_08": 3.086,
+      "exp2008_09": 3.151,
+      "exp2009_10": 3.76,
+      "exp2010_11": 1.551,
+      "exp2011_12": 0.139,
+      "exp2012_13": 2.114,
+      "exp2013_14": 2.075
+    },
+    {
+      "program": "Food Innovation Grants - National Food Industry Strategy",
+      "exp2004_05": 10.8,
+      "exp2005_06": 15.4,
+      "exp2006_07": 13.1,
+      "exp2007_08": 13.1,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Forest Industry Climate Change Research Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 3.473,
+      "exp2010_11": 1.294,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Land and Water Research",
+      "exp2004_05": 12.5,
+      "exp2005_06": 12.5,
+      "exp2006_07": 12.8,
+      "exp2007_08": 13.0,
+      "exp2008_09": 13.018,
+      "exp2009_10": 6.7,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Weeds and Productivity Research Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 3.146,
+      "exp2009_10": 4.089,
+      "exp2010_11": 3.989,
+      "exp2011_12": 4.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "New Industries Development Program",
+      "exp2004_05": 3.5,
+      "exp2005_06": 2.6,
+      "exp2006_07": 2.0,
+      "exp2007_08": 2.3,
+      "exp2008_09": 0.18,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Regional Food Producers/Seafood Industry Innovation and Productivity",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 2.965,
+      "exp2010_11": 5.123,
+      "exp2011_12": 0.418,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Rural Industries R\u0026D Corporation",
+      "exp2004_05": 14.6,
+      "exp2005_06": 14.9,
+      "exp2006_07": 14.9,
+      "exp2007_08": 13.4,
+      "exp2008_09": 13.345,
+      "exp2009_10": 13.991,
+      "exp2010_11": 13.126,
+      "exp2011_12": 15.071,
+      "exp2012_13": 14.205,
+      "exp2013_14": 14.504
+    },
+    {
+      "program": "Australian Institute of Criminology - Criminology Research Grant Program",
+      "exp2004_05": 0.585,
+      "exp2005_06": 0.637,
+      "exp2006_07": 0.57,
+      "exp2007_08": 0.592,
+      "exp2008_09": 0.539,
+      "exp2009_10": 0.482,
+      "exp2010_11": 0.399,
+      "exp2011_12": 0.343,
+      "exp2012_13": 0.351,
+      "exp2013_14": 0.474
+    },
+    {
+      "program": "Australian Institute of Criminology - National Drug and Law Enforcement Research Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.224,
+      "exp2011_12": 1.65,
+      "exp2012_13": 0.222,
+      "exp2013_14": 1.255
+    },
+    {
+      "program": "ICT Centre of Excellence",
+      "exp2004_05": 17.2,
+      "exp2005_06": 23.5,
+      "exp2006_07": 23.97,
+      "exp2007_08": 26.849,
+      "exp2008_09": 27.338,
+      "exp2009_10": 25.437,
+      "exp2010_11": 25.946,
+      "exp2011_12": 25.0,
+      "exp2012_13": 23.75,
+      "exp2013_14": 22.563
+    },
+    {
+      "program": "Asia Pacific Civil Military Centre of Excellence Research and Lessons Learnt",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.304,
+      "exp2010_11": 0.774,
+      "exp2011_12": 0.875,
+      "exp2012_13": 1.254,
+      "exp2013_14": 1.285
+    },
+    {
+      "program": "Defence Materiel Organisation - Capability Technology Demonstrator - Extension Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 2.225,
+      "exp2008_09": 10.869,
+      "exp2009_10": 10.416,
+      "exp2010_11": 10.057,
+      "exp2011_12": 10.36,
+      "exp2012_13": 0.012,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Defence Materiel Organisation - Defence Industry Innovation Centre",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 2.754,
+      "exp2010_11": 3.236,
+      "exp2011_12": 4.35,
+      "exp2012_13": 3.5,
+      "exp2013_14": 5.191
+    },
+    {
+      "program": "Jet Fuel Exposure Syndrome Study",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.276,
+      "exp2011_12": 0.819,
+      "exp2012_13": 1.134,
+      "exp2013_14": 0.761
+    },
+    {
+      "program": "ARC Linkage Grants - FaHCSIA Cash Contributions",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.13,
+      "exp2008_09": 0.357,
+      "exp2009_10": 0.25,
+      "exp2010_11": 0.27,
+      "exp2011_12": 0.08,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Longitudinal Surveys c",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 13.853,
+      "exp2011_12": 21.746,
+      "exp2012_13": 22.411,
+      "exp2013_14": 23.624
+    },
+    {
+      "program": "Social Policy Research Programs d",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 1.439,
+      "exp2011_12": 8.007,
+      "exp2012_13": 4.992,
+      "exp2013_14": 2.22
+    },
+    {
+      "program": "Adult Stem Cell Research Centre",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 5.0,
+      "exp2007_08": 5.0,
+      "exp2008_09": 5.0,
+      "exp2009_10": 5.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Longitudinal Study on Male Health",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 1.7,
+      "exp2011_12": 2.1,
+      "exp2012_13": 3.088,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian National Preventive Health Agency Research Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 4.675,
+      "exp2012_13": 7.097,
+      "exp2013_14": 4.894
+    },
+    {
+      "program": "Cancer Clinical Trials",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 5.105,
+      "exp2007_08": 5.212,
+      "exp2008_09": 5.429,
+      "exp2009_10": 5.538,
+      "exp2010_11": 5.526,
+      "exp2011_12": 5.405,
+      "exp2012_13": 5.56,
+      "exp2013_14": 5.911
+    },
+    {
+      "program": "Cancer Data",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.393,
+      "exp2010_11": 0.335,
+      "exp2011_12": 0.399,
+      "exp2012_13": 0.407,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Cancer Research",
+      "exp2004_05": 0.0,
+      "exp2005_06": 3.0,
+      "exp2006_07": 5.084,
+      "exp2007_08": 5.673,
+      "exp2008_09": 5.879,
+      "exp2009_10": 4.43,
+      "exp2010_11": 4.419,
+      "exp2011_12": 4.404,
+      "exp2012_13": 4.5,
+      "exp2013_14": 4.71
+    },
+    {
+      "program": "Chronic Disease Prevention and Service Improvement Fund e",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 5.0,
+      "exp2007_08": 5.0,
+      "exp2008_09": 5.0,
+      "exp2009_10": 5.9,
+      "exp2010_11": 0.858,
+      "exp2011_12": 0.77,
+      "exp2012_13": 0.25,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Cooperative Research Centre for Aboriginal and Torres Strait Islander Health",
+      "exp2004_05": 0.2,
+      "exp2005_06": 0.2,
+      "exp2006_07": 0.2,
+      "exp2007_08": 0.2,
+      "exp2008_09": 0.2,
+      "exp2009_10": 0.1,
+      "exp2010_11": 0.2,
+      "exp2011_12": 0.2,
+      "exp2012_13": 0.2,
+      "exp2013_14": 0.2
+    },
+    {
+      "program": "Health Sciences - Australian Longitudinal Study on Women\u0027s Health f",
+      "exp2004_05": 1.1,
+      "exp2005_06": 1.4,
+      "exp2006_07": 1.4,
+      "exp2007_08": 1.4,
+      "exp2008_09": 1.4,
+      "exp2009_10": 1.339,
+      "exp2010_11": 2.359,
+      "exp2011_12": 3.129,
+      "exp2012_13": 3.605,
+      "exp2013_14": 1.618
+    },
+    {
+      "program": "Improving Lung Cancer and Treatment Guidelines g",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.944,
+      "exp2010_11": 2.449,
+      "exp2011_12": 1.479,
+      "exp2012_13": 1.464,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Indigenous Public Health Workforce Capacity Building Project, University of Melbourne (ONEMDA) and Deakin University Institute of Koori Education h",
+      "exp2004_05": 0.462,
+      "exp2005_06": 0.47,
+      "exp2006_07": 0.48,
+      "exp2007_08": 0.49,
+      "exp2008_09": 0.5,
+      "exp2009_10": 0.567,
+      "exp2010_11": 0.485,
+      "exp2011_12": 0.505,
+      "exp2012_13": 0.267,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Alcohol and Drugs Information and Awareness i",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 3.109,
+      "exp2012_13": 3.55,
+      "exp2013_14": 3.387
+    },
+    {
+      "program": "Australian Drug and Alcohol services mapping and database creation i",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.223,
+      "exp2012_13": 0.223,
+      "exp2013_14": 0.182
+    },
+    {
+      "program": "Bettering the Evaluation and Care of Health",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.3,
+      "exp2012_13": 0.315,
+      "exp2013_14": 0.33
+    },
+    {
+      "program": "Disease Prevention and Health Promotion in Medicare Locals Program i",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 1.804,
+      "exp2013_14": 2.028
+    },
+    {
+      "program": "Investing in Hearing Research",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.454,
+      "exp2008_09": 1.088,
+      "exp2009_10": 2.964,
+      "exp2010_11": 1.132,
+      "exp2011_12": 0.313,
+      "exp2012_13": 0.115,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Jigsaw Foundation - Support for Craniofacial Surgery",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 1.25,
+      "exp2011_12": 1.25,
+      "exp2012_13": 1.25,
+      "exp2013_14": 1.25
+    },
+    {
+      "program": "Juvenile Diabetes Research Foundation - Australian Type 1 Diabetes Clinical Research Network",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 5.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Medical Research Infrastructure Projects j",
+      "exp2004_05": 0.0,
+      "exp2005_06": 215.0,
+      "exp2006_07": 435.8,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Acoustic Laboratories",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 4.099,
+      "exp2013_14": 4.18
+    },
+    {
+      "program": "National Breast Cancer Foundation Cohort Study",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.45,
+      "exp2009_10": 0.55,
+      "exp2010_11": 0.5,
+      "exp2011_12": 0.5,
+      "exp2012_13": 0.5,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Cancer Plan - Boost Cancer Research",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 5.0,
+      "exp2009_10": 5.157,
+      "exp2010_11": 4.985,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Centre for Immunisation Research and Surveillance",
+      "exp2004_05": 0.175,
+      "exp2005_06": 0.33,
+      "exp2006_07": 0.33,
+      "exp2007_08": 0.33,
+      "exp2008_09": 0.725,
+      "exp2009_10": 0.725,
+      "exp2010_11": 0.752,
+      "exp2011_12": 0.77,
+      "exp2012_13": 0.79,
+      "exp2013_14": 0.793
+    },
+    {
+      "program": "National Drug and Alcohol Research Centres of Excellence, Substance Misuse Prevention and Service Improvement Grants Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 5.894,
+      "exp2012_13": 4.465,
+      "exp2013_14": 4.181
+    },
+    {
+      "program": "National Illicit Drug Strategy Research",
+      "exp2004_05": 0.246,
+      "exp2005_06": 0.228,
+      "exp2006_07": 0.65,
+      "exp2007_08": 0.47,
+      "exp2008_09": 0.295,
+      "exp2009_10": 0.514,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.2,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Public Health Communicable Disease Control - Research Centres",
+      "exp2004_05": 0.0,
+      "exp2005_06": 8.201,
+      "exp2006_07": 8.229,
+      "exp2007_08": 8.525,
+      "exp2008_09": 8.828,
+      "exp2009_10": 9.022,
+      "exp2010_11": 9.175,
+      "exp2011_12": 9.331,
+      "exp2012_13": 9.5,
+      "exp2013_14": 9.655
+    },
+    {
+      "program": "NHMRC Research Grants",
+      "exp2004_05": 378.224,
+      "exp2005_06": 424.555,
+      "exp2006_07": 471.693,
+      "exp2007_08": 560.731,
+      "exp2008_09": 699.257,
+      "exp2009_10": 707.068,
+      "exp2010_11": 754.184,
+      "exp2011_12": 811.811,
+      "exp2012_13": 761.008,
+      "exp2013_14": 858.576
+    },
+    {
+      "program": "Palliative Care Clinical Studies Collaborative 2011 - 2014 i",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 2.222,
+      "exp2012_13": 2.475,
+      "exp2013_14": 2.34
+    },
+    {
+      "program": "Pandemic Vaccine Accelerated Development",
+      "exp2004_05": 0.0,
+      "exp2005_06": 1.972,
+      "exp2006_07": 2.465,
+      "exp2007_08": 2.507,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Primary Care Policy, Innovation and Research",
+      "exp2004_05": 0.0,
+      "exp2005_06": 14.648,
+      "exp2006_07": 14.215,
+      "exp2007_08": 16.385,
+      "exp2008_09": 14.556,
+      "exp2009_10": 16.471,
+      "exp2010_11": 14.422,
+      "exp2011_12": 14.74,
+      "exp2012_13": 0.12,
+      "exp2013_14": 0.09
+    },
+    {
+      "program": "Primary Health Care Research Evaluation and Development - Australian Primary Health Care Research Institute",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 7.418,
+      "exp2012_13": 11.1,
+      "exp2013_14": 10.282
+    },
+    {
+      "program": "Primary Health Care Research Evaluation and Development - Primary Health Care Research and Information Service",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 1.864,
+      "exp2012_13": 1.773,
+      "exp2013_14": 1.364
+    },
+    {
+      "program": "Research for Australian Dietary Guidelines i",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.066,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Research for Change - Alcohol and Drug Prevention i",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.222,
+      "exp2012_13": 0.206,
+      "exp2013_14": 0.2
+    },
+    {
+      "program": "Review of the Australian Radiation Protection and Nuclear Safety Act 1998",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.227,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Support for Diabetes Research",
+      "exp2004_05": 0.2,
+      "exp2005_06": 4.89,
+      "exp2006_07": 6.832,
+      "exp2007_08": 6.016,
+      "exp2008_09": 9.794,
+      "exp2009_10": 4.364,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "The Palliative Care Clinical Studies Collaborative",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 2.934,
+      "exp2012_13": 1.498,
+      "exp2013_14": 0.476
+    },
+    {
+      "program": "Two Dedicated Prostate Cancer Research Centres",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 3.0,
+      "exp2009_10": 2.0,
+      "exp2010_11": 1.0,
+      "exp2011_12": 5.0,
+      "exp2012_13": 4.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Human Services Delivery Research Alliance",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 2.0,
+      "exp2010_11": 2.0,
+      "exp2011_12": 2.0,
+      "exp2012_13": 2.0,
+      "exp2013_14": 2.0
+    },
+    {
+      "program": "Service Delivery Reform Research",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.039,
+      "exp2011_12": 0.154,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australia-China Science and Research Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 2.0,
+      "exp2012_13": 4.0,
+      "exp2013_14": 3.0
+    },
+    {
+      "program": "Australian Astronomical Observatory",
+      "exp2004_05": 4.112,
+      "exp2005_06": 4.594,
+      "exp2006_07": 4.699,
+      "exp2007_08": 4.793,
+      "exp2008_09": 4.916,
+      "exp2009_10": 9.037,
+      "exp2010_11": 10.44,
+      "exp2011_12": 10.254,
+      "exp2012_13": 11.204,
+      "exp2013_14": 11.299
+    },
+    {
+      "program": "Australian Climate Change Science program",
+      "exp2004_05": 7.8,
+      "exp2005_06": 7.8,
+      "exp2006_07": 7.8,
+      "exp2007_08": 7.8,
+      "exp2008_09": 7.8,
+      "exp2009_10": 7.8,
+      "exp2010_11": 7.8,
+      "exp2011_12": 7.8,
+      "exp2012_13": 7.45,
+      "exp2013_14": 8.15
+    },
+    {
+      "program": "Australian National University Research Infrastructure Projects",
+      "exp2004_05": 0.0,
+      "exp2005_06": 125.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian National Stem Cell Centre",
+      "exp2004_05": 5.8,
+      "exp2005_06": 7.1,
+      "exp2006_07": 6.5,
+      "exp2007_08": 6.0,
+      "exp2008_09": 5.5,
+      "exp2009_10": 5.0,
+      "exp2010_11": 4.5,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Space Science Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 5.765,
+      "exp2010_11": 11.982,
+      "exp2011_12": 12.172,
+      "exp2012_13": 13.406,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Synchrotron Contribution",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 50.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Automotive Competitiveness Investment Scheme",
+      "exp2004_05": 130.4,
+      "exp2005_06": 145.7,
+      "exp2006_07": 168.9,
+      "exp2007_08": 178.4,
+      "exp2008_09": 202.4,
+      "exp2009_10": 233.766,
+      "exp2010_11": 141.698,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Automotive Transformation Scheme",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 107.26,
+      "exp2011_12": 197.159,
+      "exp2012_13": 229.709,
+      "exp2013_14": 236.426
+    },
+    {
+      "program": "Bilateral Climate Change Partnerships program k",
+      "exp2004_05": 0.22,
+      "exp2005_06": 0.1,
+      "exp2006_07": 1.1,
+      "exp2007_08": 1.2,
+      "exp2008_09": 6.5,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Bond University - Grant for Clinical Education and Research Centre Building",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 2.542,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Bond University - Grant for Health Science and Medicine Building",
+      "exp2004_05": 0.0,
+      "exp2005_06": 4.5,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Building Information Technology Strengths ? Advanced Networks Program",
+      "exp2004_05": 8.0,
+      "exp2005_06": 7.0,
+      "exp2006_07": 5.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Building Information Technology Strengths ? Incubators",
+      "exp2004_05": 12.6,
+      "exp2005_06": 10.6,
+      "exp2006_07": 5.0,
+      "exp2007_08": 3.5,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Cairns Institute Tropical Innovation Hub - Contribution",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 15.0,
+      "exp2011_12": 4.5,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Carbon Farming Futures - Methodology Development",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.123,
+      "exp2012_13": 0.427,
+      "exp2013_14": 2.361
+    },
+    {
+      "program": "Clean Business Australia - Climate Ready Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 15.913,
+      "exp2009_10": 37.57,
+      "exp2010_11": 14.566,
+      "exp2011_12": 8.027,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Clean Technology Innovation Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 3.5,
+      "exp2013_14": 60.7
+    },
+    {
+      "program": "Collaborative Research Network Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 8.73,
+      "exp2011_12": 30.4,
+      "exp2012_13": 20.7,
+      "exp2013_14": 10.4
+    },
+    {
+      "program": "Commercial Ready Program  l",
+      "exp2004_05": 152.1,
+      "exp2005_06": 163.4,
+      "exp2006_07": 172.1,
+      "exp2007_08": 185.961,
+      "exp2008_09": 132.29,
+      "exp2009_10": 41.33,
+      "exp2010_11": 4.11,
+      "exp2011_12": 0.9,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Commercialisation Australia m",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 2.296,
+      "exp2010_11": 23.465,
+      "exp2011_12": 51.035,
+      "exp2012_13": 63.536,
+      "exp2013_14": 65.779
+    },
+    {
+      "program": "Commercialising Emerging Technologies (COMET)",
+      "exp2004_05": 7.9,
+      "exp2005_06": 8.4,
+      "exp2006_07": 9.736,
+      "exp2007_08": 14.0,
+      "exp2008_09": 13.5,
+      "exp2009_10": 11.2,
+      "exp2010_11": 6.1,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Commonwealth Serum Laboratories (CSL) - Commonwealth Assistance",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 9.3,
+      "exp2011_12": 10.6,
+      "exp2012_13": 8.0,
+      "exp2013_14": 2.1
+    },
+    {
+      "program": "Australian National Institute for Public Policy",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 1.65,
+      "exp2011_12": 2.375,
+      "exp2012_13": 0.125,
+      "exp2013_14": 0.75
+    },
+    {
+      "program": "The Australian Building the Centre on China in the World",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 10.1,
+      "exp2011_12": 5.35,
+      "exp2012_13": 2.65,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Building the National Security College",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.131,
+      "exp2011_12": 0.166,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Centre on China in the World",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 35.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Security College",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.099,
+      "exp2011_12": 0.081,
+      "exp2012_13": 0.048,
+      "exp2013_14": 0.081
+    },
+    {
+      "program": "Sir Roland Wilson Foundation",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 7.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Competitive Pre-Seed Fund",
+      "exp2004_05": 6.7,
+      "exp2005_06": 12.5,
+      "exp2006_07": 8.8,
+      "exp2007_08": 11.119,
+      "exp2008_09": 6.876,
+      "exp2009_10": 5.459,
+      "exp2010_11": 2.079,
+      "exp2011_12": 1.29,
+      "exp2012_13": 4.062,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Cooperative Research Centres (CRC)",
+      "exp2004_05": 194.515,
+      "exp2005_06": 208.109,
+      "exp2006_07": 189.343,
+      "exp2007_08": 211.938,
+      "exp2008_09": 182.276,
+      "exp2009_10": 178.874,
+      "exp2010_11": 172.638,
+      "exp2011_12": 165.474,
+      "exp2012_13": 155.645,
+      "exp2013_14": 144.091
+    },
+    {
+      "program": "Enterprise Connect",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.201,
+      "exp2008_09": 0.261,
+      "exp2009_10": 0.991,
+      "exp2010_11": 1.061,
+      "exp2011_12": 1.118,
+      "exp2012_13": 1.705,
+      "exp2013_14": 1.5
+    },
+    {
+      "program": "Enterprise Solution",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.8
+    },
+    {
+      "program": "Establishment of an ICT-Enabled Research Laboratory - Commonwealth Assistance",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.66,
+      "exp2011_12": 2.313,
+      "exp2012_13": 4.052,
+      "exp2013_14": 5.555
+    },
+    {
+      "program": "European Molecular Biology Laboratory Partner Facility",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 2.0,
+      "exp2010_11": 2.0,
+      "exp2011_12": 2.0,
+      "exp2012_13": 2.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Green Car Innovation Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 108.14,
+      "exp2010_11": 62.9,
+      "exp2011_12": 125.442,
+      "exp2012_13": 47.362,
+      "exp2013_14": 5.95
+    },
+    {
+      "program": "Indigenous Carbon Farming Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.632,
+      "exp2013_14": 0.9
+    },
+    {
+      "program": "Industry Cooperative Innovation Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 1.921,
+      "exp2006_07": 3.7,
+      "exp2007_08": 4.526,
+      "exp2008_09": 5.225,
+      "exp2009_10": 4.21,
+      "exp2010_11": 1.4,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Information Technology Online (ITOL)",
+      "exp2004_05": 1.9,
+      "exp2005_06": 2.2,
+      "exp2006_07": 1.3,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Innovation Access Program ? Industry (IAccP) l",
+      "exp2004_05": 2.1,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Innovation Investment Fund including Innovation Investment Follow-on Fund m",
+      "exp2004_05": 19.6,
+      "exp2005_06": 14.7,
+      "exp2006_07": 12.3,
+      "exp2007_08": 12.072,
+      "exp2008_09": 8.143,
+      "exp2009_10": 121.752,
+      "exp2010_11": 23.196,
+      "exp2011_12": 16.9,
+      "exp2012_13": 60.782,
+      "exp2013_14": 39.142
+    },
+    {
+      "program": "Intermediary Access Program (Pilot)",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 1.0,
+      "exp2007_08": 3.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "International Education and Training (Australia-India Strategic Research Fund)",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 2.103,
+      "exp2008_09": 6.912,
+      "exp2009_10": 5.576,
+      "exp2010_11": 7.39,
+      "exp2011_12": 7.456,
+      "exp2012_13": 12.197,
+      "exp2013_14": 9.316
+    },
+    {
+      "program": "International Science Linkages",
+      "exp2004_05": 9.307,
+      "exp2005_06": 10.244,
+      "exp2006_07": 11.06,
+      "exp2007_08": 11.435,
+      "exp2008_09": 11.678,
+      "exp2009_10": 10.07,
+      "exp2010_11": 12.323,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Major National Research Facilities n",
+      "exp2004_05": 42.259,
+      "exp2005_06": 42.21,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Motor Vehicle Producer R\u0026D Scheme",
+      "exp2004_05": 0.0,
+      "exp2005_06": 6.7,
+      "exp2006_07": 12.0,
+      "exp2007_08": 14.955,
+      "exp2008_09": 15.917,
+      "exp2009_10": 12.67,
+      "exp2010_11": 22.536,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Carbon Accounting System",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 2.5,
+      "exp2008_09": 3.2,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Carbon Accounting Toolbox",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 4.0,
+      "exp2010_11": 4.033,
+      "exp2011_12": 3.9,
+      "exp2012_13": 0.276,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Collaborative Research Infrastructure Strategy n",
+      "exp2004_05": 0.0,
+      "exp2005_06": 13.146,
+      "exp2006_07": 78.196,
+      "exp2007_08": 120.597,
+      "exp2008_09": 102.8,
+      "exp2009_10": 104.11,
+      "exp2010_11": 107.09,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 80.1
+    },
+    {
+      "program": "National Enabling Technologies Strategy",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.85,
+      "exp2010_11": 0.421,
+      "exp2011_12": 0.431,
+      "exp2012_13": 0.431,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Measurement Institute",
+      "exp2004_05": 8.0,
+      "exp2005_06": 8.0,
+      "exp2006_07": 8.0,
+      "exp2007_08": 8.5,
+      "exp2008_09": 8.5,
+      "exp2009_10": 9.0,
+      "exp2010_11": 9.5,
+      "exp2011_12": 9.5,
+      "exp2012_13": 9.5,
+      "exp2013_14": 8.0
+    },
+    {
+      "program": "Pharmaceutical Industry Investment Program",
+      "exp2004_05": 0.4,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Pharmaceutical Partnerships Program",
+      "exp2004_05": 4.2,
+      "exp2005_06": 12.4,
+      "exp2006_07": 21.6,
+      "exp2007_08": 26.9,
+      "exp2008_09": 25.292,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Regional Natural Resource Management Planning for Climate Change (Stream 2)",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 5.575,
+      "exp2013_14": 5.575
+    },
+    {
+      "program": "R\u0026D Start Loans Program",
+      "exp2004_05": 10.4,
+      "exp2005_06": 1.5,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Shipbuilding Innovation Scheme",
+      "exp2004_05": 2.9,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Small-Scale Mammalian Cell Production Facility",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 1.0,
+      "exp2010_11": 1.0,
+      "exp2011_12": 4.0,
+      "exp2012_13": 4.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Square Kilometre Array Radio Telescope",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 1.3,
+      "exp2013_14": 6.74
+    },
+    {
+      "program": "ABS Freight Data",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.4,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Air Cargo X-ray Trials",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 4.932,
+      "exp2007_08": 3.82,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "ANCAP-Vehicle Testing/Stars on Cars",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.55,
+      "exp2010_11": 1.1,
+      "exp2011_12": 1.1,
+      "exp2012_13": 1.1,
+      "exp2013_14": 1.1
+    },
+    {
+      "program": "COAG Road Reform Contribution",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 2.625,
+      "exp2010_11": 0.656,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.833,
+      "exp2013_14": 0.738
+    },
+    {
+      "program": "Funding to Transport Certification Australia - Heavy Vehicle Telematics and the Intelligent Access Project",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 1.049,
+      "exp2010_11": 1.017,
+      "exp2011_12": 0.738,
+      "exp2012_13": 0.495,
+      "exp2013_14": 0.294
+    },
+    {
+      "program": "International Study on the Effectiveness of Reversing cameras",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.07,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Joint Liquids, Aerosols and Gels Trial",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.196,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Liquids, Aerosols and Gels Screening Technology Trials",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.886,
+      "exp2008_09": 3.502,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Low Volume Roads Research",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 1.6,
+      "exp2008_09": 0.6,
+      "exp2009_10": 0.275,
+      "exp2010_11": 0.072,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Patronage Forecasting",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.182,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Payments to Austroads/ARRB Transport Research Ltd.",
+      "exp2004_05": 1.9,
+      "exp2005_06": 2.2,
+      "exp2006_07": 2.2,
+      "exp2007_08": 2.8,
+      "exp2008_09": 2.74,
+      "exp2009_10": 3.131,
+      "exp2010_11": 3.214,
+      "exp2011_12": 3.311,
+      "exp2012_13": 3.387,
+      "exp2013_14": 3.477
+    },
+    {
+      "program": "Teledyne - Stand-Off Body Scanner Project",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.05,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "University of Tasmania - Pre-Blast Explosive Analyser Project",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.07,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Anti-doping Research Program (ADRP)",
+      "exp2004_05": 0.6,
+      "exp2005_06": 0.5,
+      "exp2006_07": 0.6,
+      "exp2007_08": 1.2,
+      "exp2008_09": 1.3,
+      "exp2009_10": 0.8,
+      "exp2010_11": 0.7,
+      "exp2011_12": 0.736,
+      "exp2012_13": 0.794,
+      "exp2013_14": 1.002
+    },
+    {
+      "program": "ARC Linkage Grants - National Museum of Australian Contribution Payment",
+      "exp2004_05": 0.01,
+      "exp2005_06": 0.046,
+      "exp2006_07": 0.078,
+      "exp2007_08": 0.054,
+      "exp2008_09": 0.024,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.09,
+      "exp2011_12": 0.072,
+      "exp2012_13": 0.082,
+      "exp2013_14": 0.052
+    },
+    {
+      "program": "ARC Linkage Grant (through the University of Sydney) - Cultures of Coast and Sea: Maritime Environmental, Cultural and Ethnographic Histories of Northeast Australia",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.087,
+      "exp2012_13": 0.147,
+      "exp2013_14": 0.119
+    },
+    {
+      "program": "Australia Council - Synapse Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.3,
+      "exp2006_07": 0.1,
+      "exp2007_08": 0.1,
+      "exp2008_09": 0.155,
+      "exp2009_10": 0.177,
+      "exp2010_11": 0.09,
+      "exp2011_12": 0.158,
+      "exp2012_13": 0.075,
+      "exp2013_14": 0.075
+    },
+    {
+      "program": "Alcohol in Sport",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.02,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Sport Commission Research Programs",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 1.789,
+      "exp2010_11": 2.217,
+      "exp2011_12": 2.098,
+      "exp2012_13": 2.826,
+      "exp2013_14": 2.826
+    },
+    {
+      "program": "Conservation and Preservation Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.319,
+      "exp2010_11": 0.347,
+      "exp2011_12": 0.355,
+      "exp2012_13": 0.399,
+      "exp2013_14": 0.411
+    },
+    {
+      "program": "Disability and Volunteers Segmentation",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.31,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Regional and Rural Development Grant",
+      "exp2004_05": 0.16,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Regional and Rural Research and Development Grants",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.183,
+      "exp2006_07": 0.216,
+      "exp2007_08": 0.223,
+      "exp2008_09": 0.125,
+      "exp2009_10": 0.195,
+      "exp2010_11": 0.228,
+      "exp2011_12": 0.228,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.227
+    },
+    {
+      "program": "Regional and Rural Research and Information and Data Program",
+      "exp2004_05": 0.066,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Advanced Electricity Storage Technologies",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.2,
+      "exp2006_07": 0.8,
+      "exp2007_08": 2.518,
+      "exp2008_09": 8.661,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Renewable Energy Agency o",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 65.299,
+      "exp2010_11": 44.37,
+      "exp2011_12": 74.541,
+      "exp2012_13": 64.862,
+      "exp2013_14": 36.448
+    },
+    {
+      "program": "Energy Innovation Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 5.843,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Global Carbon Capture and Storage Institute",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 82.302,
+      "exp2009_10": 100.0,
+      "exp2010_11": 100.0,
+      "exp2011_12": 25.0,
+      "exp2012_13": 35.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Low Emissions Technology Demonstration Fund",
+      "exp2004_05": 0.8,
+      "exp2005_06": 1.5,
+      "exp2006_07": 1.3,
+      "exp2007_08": 1.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "National Low Emissions Coal Initiative",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 14.0,
+      "exp2008_09": 8.699,
+      "exp2009_10": 32.287,
+      "exp2010_11": 47.63,
+      "exp2011_12": 43.256,
+      "exp2012_13": 22.076,
+      "exp2013_14": 65.591
+    },
+    {
+      "program": "Otway Basin Pilot Project",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 2.4445,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.569,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Renewable Energy Fund",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 4.9,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Wind Forecasting Capability",
+      "exp2004_05": 0.9,
+      "exp2005_06": 4.5,
+      "exp2006_07": 4.0,
+      "exp2007_08": 3.2,
+      "exp2008_09": 1.3,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Australian Biological Resources Study",
+      "exp2004_05": 3.0,
+      "exp2005_06": 3.0,
+      "exp2006_07": 1.9,
+      "exp2007_08": 2.03,
+      "exp2008_09": 2.03,
+      "exp2009_10": 2.03,
+      "exp2010_11": 2.028,
+      "exp2011_12": 2.03,
+      "exp2012_13": 1.97,
+      "exp2013_14": 2.03
+    },
+    {
+      "program": "Emissions Measurement and Analysis",
+      "exp2004_05": 7.7,
+      "exp2005_06": 6.8,
+      "exp2006_07": 6.3,
+      "exp2007_08": 6.1,
+      "exp2008_09": 6.6,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Greenhouse Gas Abatement Program",
+      "exp2004_05": 15.4,
+      "exp2005_06": 13.318,
+      "exp2006_07": 17.721,
+      "exp2007_08": 7.944,
+      "exp2008_09": 1.502,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Low Emissions Technology and Abatement",
+      "exp2004_05": 0.9,
+      "exp2005_06": 1.95,
+      "exp2006_07": 6.736,
+      "exp2007_08": 3.067,
+      "exp2008_09": 1.733,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Marine and Biodiversity Research",
+      "exp2004_05": 1.8,
+      "exp2005_06": 2.1,
+      "exp2006_07": 9.6,
+      "exp2007_08": 8.5,
+      "exp2008_09": 13.924,
+      "exp2009_10": 6.442,
+      "exp2010_11": 2.916,
+      "exp2011_12": 4.738,
+      "exp2012_13": 9.624,
+      "exp2013_14": 3.311
+    },
+    {
+      "program": "National Environmental Research Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 2.885,
+      "exp2006_07": 15.493,
+      "exp2007_08": 22.959,
+      "exp2008_09": 25.395,
+      "exp2009_10": 24.356,
+      "exp2010_11": 20.02,
+      "exp2011_12": 19.02,
+      "exp2012_13": 20.02,
+      "exp2013_14": 20.52
+    },
+    {
+      "program": "Office of Water Science",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 30.0,
+      "exp2012_13": 15.04,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Reef Resilience R\u0026D Portfolio",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 3.125
+    },
+    {
+      "program": "Reef Water Quality",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 1.021,
+      "exp2009_10": 0.11,
+      "exp2010_11": 3.398,
+      "exp2011_12": 3.0,
+      "exp2012_13": 2.452,
+      "exp2013_14": 1.5
+    },
+    {
+      "program": "Renewable Energy Commercialisation Program",
+      "exp2004_05": 2.9,
+      "exp2005_06": 1.694,
+      "exp2006_07": 1.519,
+      "exp2007_08": 0.0,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Renewable Energy Equity Fund",
+      "exp2004_05": 0.4,
+      "exp2005_06": 1.338,
+      "exp2006_07": 0.819,
+      "exp2007_08": 1.799,
+      "exp2008_09": 0.0,
+      "exp2009_10": 0.0,
+      "exp2010_11": 0.0,
+      "exp2011_12": 0.0,
+      "exp2012_13": 0.0,
+      "exp2013_14": 0.0
+    },
+    {
+      "program": "Urban Water Centres of Excellence Program",
+      "exp2004_05": 0.0,
+      "exp2005_06": 0.0,
+      "exp2006_07": 0.0,
+      "exp2007_08": 0.0,
+      "exp2008_09": 4.0,
+      "exp2009_10": 9.0,
+      "exp2010_11": 8.0,
+      "exp2011_12": 8.0,
+      "exp2012_13": 10.0,
+      "exp2013_14": 1.0
+    },
+    {
+      "program": "Australian War Memorial - Official Histories",
+      "exp2004_05": 0.26176,
+      "exp2005_06": 0.291935,
+      "exp2006_07": 0.274971,
+      "exp2007_08": 0.189729,
+      "exp2008_09": 0.199418,
+      "exp2009_10": 0.242768,
+      "exp2010_11": 0.174042,
+      "exp2011_12": 0.13,
+      "exp2012_13": 0.115,
+      "exp2013_14": 0.244
+    }
+  ],
+  "edgeList": [
+    {
+      "src": "root",
+      "tgt": "Agriculture, Fisheries and Forestry"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Carbon Farming Futures - Action on the Ground"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Carbon Farming Futures - Filling the Research Gap"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Carbon Farming Futures - Extension and Outreach"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Carbon Farming Initiative"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Centres of Excellence - Biosecurity Risk Analysis and Research"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Centres of Excellence - National Food Industry Strategy"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Animal Welfare, Biosecurity and Exotic Disease Preparedness Programs b"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Climate Change Research Program"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Fisheries Resources Research Fund"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Food Innovation Grants - National Food Industry Strategy"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Forest Industry Climate Change Research Fund"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Land and Water Research"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "National Weeds and Productivity Research Program"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "New Industries Development Program"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Regional Food Producers/Seafood Industry Innovation and Productivity"
+    },
+    {
+      "src": "Agriculture, Fisheries and Forestry",
+      "tgt": "Rural Industries R\u0026D Corporation"
+    },
+    {
+      "src": "root",
+      "tgt": "Attorney-General"
+    },
+    {
+      "src": "Attorney-General",
+      "tgt": "Australian Institute of Criminology - Criminology Research Grant Program"
+    },
+    {
+      "src": "Attorney-General",
+      "tgt": "Australian Institute of Criminology - National Drug and Law Enforcement Research Program"
+    },
+    {
+      "src": "root",
+      "tgt": "Broadband, Communications and the Digital Economy"
+    },
+    {
+      "src": "Broadband, Communications and the Digital Economy",
+      "tgt": "ICT Centre of Excellence"
+    },
+    {
+      "src": "root",
+      "tgt": "Defence"
+    },
+    {
+      "src": "Defence",
+      "tgt": "Asia Pacific Civil Military Centre of Excellence Research and Lessons Learnt"
+    },
+    {
+      "src": "Defence",
+      "tgt": "Defence Materiel Organisation - Capability Technology Demonstrator - Extension Program"
+    },
+    {
+      "src": "Defence",
+      "tgt": "Defence Materiel Organisation - Defence Industry Innovation Centre"
+    },
+    {
+      "src": "Defence",
+      "tgt": "Jet Fuel Exposure Syndrome Study"
+    },
+    {
+      "src": "root",
+      "tgt": "Families, Housing, Community Services and Indigenous Affairs"
+    },
+    {
+      "src": "Families, Housing, Community Services and Indigenous Affairs",
+      "tgt": "ARC Linkage Grants - FaHCSIA Cash Contributions"
+    },
+    {
+      "src": "Families, Housing, Community Services and Indigenous Affairs",
+      "tgt": "Longitudinal Surveys c"
+    },
+    {
+      "src": "Families, Housing, Community Services and Indigenous Affairs",
+      "tgt": "Social Policy Research Programs d"
+    },
+    {
+      "src": "root",
+      "tgt": "Health and Ageing"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Adult Stem Cell Research Centre"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Australian Longitudinal Study on Male Health"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Australian National Preventive Health Agency Research Fund"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Cancer Clinical Trials"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Cancer Data"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Cancer Research"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Chronic Disease Prevention and Service Improvement Fund e"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Cooperative Research Centre for Aboriginal and Torres Strait Islander Health"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Health Sciences - Australian Longitudinal Study on Women\u0027s Health f"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Improving Lung Cancer and Treatment Guidelines g"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Indigenous Public Health Workforce Capacity Building Project, University of Melbourne (ONEMDA) and Deakin University Institute of Koori Education h"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Alcohol and Drugs Information and Awareness i"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Australian Drug and Alcohol services mapping and database creation i"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Bettering the Evaluation and Care of Health"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Disease Prevention and Health Promotion in Medicare Locals Program i"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Investing in Hearing Research"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Jigsaw Foundation - Support for Craniofacial Surgery"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Juvenile Diabetes Research Foundation - Australian Type 1 Diabetes Clinical Research Network"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Medical Research Infrastructure Projects j"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Acoustic Laboratories"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Breast Cancer Foundation Cohort Study"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Cancer Plan - Boost Cancer Research"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Centre for Immunisation Research and Surveillance"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Drug and Alcohol Research Centres of Excellence, Substance Misuse Prevention and Service Improvement Grants Fund"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Illicit Drug Strategy Research"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "National Public Health Communicable Disease Control - Research Centres"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "NHMRC Research Grants"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Palliative Care Clinical Studies Collaborative 2011 - 2014 i"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Pandemic Vaccine Accelerated Development"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Primary Care Policy, Innovation and Research"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Primary Health Care Research Evaluation and Development - Australian Primary Health Care Research Institute"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Primary Health Care Research Evaluation and Development - Primary Health Care Research and Information Service"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Research for Australian Dietary Guidelines i"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Research for Change - Alcohol and Drug Prevention i"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Review of the Australian Radiation Protection and Nuclear Safety Act 1998"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Support for Diabetes Research"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "The Palliative Care Clinical Studies Collaborative"
+    },
+    {
+      "src": "Health and Ageing",
+      "tgt": "Two Dedicated Prostate Cancer Research Centres"
+    },
+    {
+      "src": "root",
+      "tgt": "Human Services"
+    },
+    {
+      "src": "Human Services",
+      "tgt": "Human Services Delivery Research Alliance"
+    },
+    {
+      "src": "Human Services",
+      "tgt": "Service Delivery Reform Research"
+    },
+    {
+      "src": "root",
+      "tgt": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australia-China Science and Research Fund"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australian Astronomical Observatory"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australian Climate Change Science program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australian National University Research Infrastructure Projects"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australian National Stem Cell Centre"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australian Space Science Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Australian Synchrotron Contribution"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Automotive Competitiveness Investment Scheme"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Automotive Transformation Scheme"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Bilateral Climate Change Partnerships program k"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Bond University - Grant for Clinical Education and Research Centre Building"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Bond University - Grant for Health Science and Medicine Building"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Building Information Technology Strengths ? Advanced Networks Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Building Information Technology Strengths ? Incubators"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Cairns Institute Tropical Innovation Hub - Contribution"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Carbon Farming Futures - Methodology Development"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Clean Business Australia - Climate Ready Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Clean Technology Innovation Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Collaborative Research Network Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Commercial Ready Program  l"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Commercialisation Australia m"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Commercialising Emerging Technologies (COMET)"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Commonwealth Serum Laboratories (CSL) - Commonwealth Assistance"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Commonwealth Strategic Relationship with ANU"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "Australian National Institute for Public Policy"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "The Australian Building the Centre on China in the World"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "Building the National Security College"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "Australian Centre on China in the World"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "National Security College"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "Sir Roland Wilson Foundation"
+    },
+    {
+      "src": "Commonwealth Strategic Relationship with ANU",
+      "tgt": "Competitive Pre-Seed Fund"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Cooperative Research Centres (CRC)"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Enterprise Connect"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Enterprise Solution"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Establishment of an ICT-Enabled Research Laboratory - Commonwealth Assistance"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "European Molecular Biology Laboratory Partner Facility"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Green Car Innovation Fund"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Indigenous Carbon Farming Fund"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Industry Cooperative Innovation Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Information Technology Online (ITOL)"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Innovation Access Program ? Industry (IAccP) l"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Innovation Investment Fund including Innovation Investment Follow-on Fund m"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Intermediary Access Program (Pilot)"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "International Education and Training (Australia-India Strategic Research Fund)"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "International Science Linkages"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Major National Research Facilities n"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Motor Vehicle Producer R\u0026D Scheme"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "National Carbon Accounting System"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "National Carbon Accounting Toolbox"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "National Collaborative Research Infrastructure Strategy n"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "National Enabling Technologies Strategy"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "National Measurement Institute"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Pharmaceutical Industry Investment Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Pharmaceutical Partnerships Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Regional Natural Resource Management Planning for Climate Change (Stream 2)"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "R\u0026D Start Loans Program"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Shipbuilding Innovation Scheme"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Small-Scale Mammalian Cell Production Facility"
+    },
+    {
+      "src": "Industry, Innovation, Climate Change, Science, Research and Tertiary Education",
+      "tgt": "Square Kilometre Array Radio Telescope"
+    },
+    {
+      "src": "root",
+      "tgt": "Infrastructure and Transport"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "ABS Freight Data"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Air Cargo X-ray Trials"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "ANCAP-Vehicle Testing/Stars on Cars"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "COAG Road Reform Contribution"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Funding to Transport Certification Australia - Heavy Vehicle Telematics and the Intelligent Access Project"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "International Study on the Effectiveness of Reversing cameras"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Joint Liquids, Aerosols and Gels Trial"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Liquids, Aerosols and Gels Screening Technology Trials"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Low Volume Roads Research"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Patronage Forecasting"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Payments to Austroads/ARRB Transport Research Ltd."
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "Teledyne - Stand-Off Body Scanner Project"
+    },
+    {
+      "src": "Infrastructure and Transport",
+      "tgt": "University of Tasmania - Pre-Blast Explosive Analyser Project"
+    },
+    {
+      "src": "root",
+      "tgt": "Regional Australia, Local Government, Arts and Sport"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Anti-doping Research Program (ADRP)"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "ARC Linkage Grants - National Museum of Australian Contribution Payment"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "ARC Linkage Grant (through the University of Sydney) - Cultures of Coast and Sea: Maritime Environmental, Cultural and Ethnographic Histories of Northeast Australia"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Australia Council - Synapse Program"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Alcohol in Sport"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Australian Sport Commission Research Programs"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Conservation and Preservation Program"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Disability and Volunteers Segmentation"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Regional and Rural Development Grant"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Regional and Rural Research and Development Grants"
+    },
+    {
+      "src": "Regional Australia, Local Government, Arts and Sport",
+      "tgt": "Regional and Rural Research and Information and Data Program"
+    },
+    {
+      "src": "root",
+      "tgt": "Resources, Energy and Tourism"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Advanced Electricity Storage Technologies"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Australian Renewable Energy Agency o"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Energy Innovation Fund"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Global Carbon Capture and Storage Institute"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Low Emissions Technology Demonstration Fund"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "National Low Emissions Coal Initiative"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Otway Basin Pilot Project"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Renewable Energy Fund"
+    },
+    {
+      "src": "Resources, Energy and Tourism",
+      "tgt": "Wind Forecasting Capability"
+    },
+    {
+      "src": "root",
+      "tgt": "Sustainability, Environment, Water, Population and Communities"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Australian Biological Resources Study"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Emissions Measurement and Analysis"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Greenhouse Gas Abatement Program"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Low Emissions Technology and Abatement"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Marine and Biodiversity Research"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "National Environmental Research Program"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Office of Water Science"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Reef Resilience R\u0026D Portfolio"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Reef Water Quality"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Renewable Energy Commercialisation Program"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Renewable Energy Equity Fund"
+    },
+    {
+      "src": "Sustainability, Environment, Water, Population and Communities",
+      "tgt": "Urban Water Centres of Excellence Program"
+    },
+    {
+      "src": "root",
+      "tgt": "Veterans\u0027 Affairs"
+    },
+    {
+      "src": "Veterans\u0027 Affairs",
+      "tgt": "Australian War Memorial - Official Histories"
+    }
+  ]
+}
