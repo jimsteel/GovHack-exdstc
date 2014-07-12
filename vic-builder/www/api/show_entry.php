@@ -26,7 +26,7 @@ var geocoder;
 function initialize() {
   geocoder = new google.maps.Geocoder();
   
-  var address = "<?PHP global $entry; print $entry; ?>";
+  var address = "<?PHP global $entry; print $entry["address"]; ?>";
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var latLng = results[0].geometry.location;
