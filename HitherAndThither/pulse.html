@@ -1,4 +1,4 @@
-<html style="font-family: helvetica;">
+<html style="background: #eee; font-family: helvetica;">
 <title>Hither and Thither</title>
 
 <script src="d3/d3.v3.min.js"></script>
@@ -14,11 +14,20 @@
   <input type="radio" name="period" id="allP" value="Both" checked>Months &amp; Years
   <input type="radio" name="period" id="yearP" value="Year">Years
 </table>
-<div id="container" style="position: relative; width: 95%; height: 85%;">
-</div>
+<div id="container" style="position: relative; width: 940; height: 500;"></div>
+<ul style="list-style-type:square; position:absolute; top:60px; left:940px; width:100px;">
+  <li style="color:#11f">decreasing</li>
+  <li style="text-shadow:0px 0px 2px black; color:#ff1">steady</li>
+  <li style="color:#f11">increasing</li>
+</ul>
+<table id="countries"></table>
 <script>
 
-var ausLat = [-25.27439, 133.775136],
+var ausLat = // [-35.3052,149.1959],/*CAN*/
+             // [-33.9398,151.177],/*SYD*/
+             // [-28.3934,153.121]/*GC*/,
+             [-29.3934,151.121]/*BNE+tweak*/,
+             // [-25.27439, 133.775136]/*CENTROID*/,
   map = new Datamap({
   element: document.getElementById('container'),
   // projection: 'mercator',
@@ -55,8 +64,8 @@ var ausLat = [-25.27439, 133.775136],
 });
 
 var dd = d3.select("#date");
-
-var g = d3.select("svg").append("g");
+var svg = d3.select("svg");
+var g = svg.append("g");
 
 function computeYearly(months) {
   var years = [], currentY = "", totals, count = 0;
@@ -169,6 +178,18 @@ function process(csvData, months, arrivals) {
       c.y = coord[1];
     });
 
+/*
+  var tt = d3.select("#countries").selectAll(".country")
+    .data(countries, function(c,i) { return c.country; });
+
+  tt.enter()
+    .append("tr")
+      .attr("class", "country")
+        .append("td")
+          .html(function (c) {return c.country;});
+  tt.exit().remove();
+*/
+
   var pp = g.selectAll(".route")
     .data(countries, function(c,i) { return c.country; });
 
@@ -181,7 +202,7 @@ function process(csvData, months, arrivals) {
                  +" "+x2+","+(y2-d);
   }
 
-  if (true) {
+  if (false) {
     pp.enter()
       .append("polygon")
         .attr("class", "route")
@@ -204,6 +225,11 @@ function process(csvData, months, arrivals) {
         .style("stroke-width", 2)
         .attr("d", map.path);
   }
+    pp.enter()
+      .append("path")
+        // Note the argument order in the following: LONG, LAT
+        .datum(function(c) {return {type: "Polygon", coordinates: [[ausLat[1],ausLat[0]], [c.longitude-2,c.latitude], [c.longitude+2,c.latitude], [ausLat[1]-1,ausLat[0]]]}; })
+        .each(function (dd) {console.log(map.path(dd))});
 
   pp.exit().remove();
 
