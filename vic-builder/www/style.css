@@ -43,6 +43,11 @@ IMG.spreadsheet {
 # A streetview box
 ########################################
 
+.map-canvas {
+  width: 350;
+  height: 245;
+}
+
 .entry_dropbox {
   width: 400;
   height: 300;
@@ -51,6 +56,7 @@ IMG.spreadsheet {
 }
 
 .entry {
+  margin: 30px;
   position: relative;
   width: 350;
   height: 245;
