@@ -1,14 +1,27 @@
 <html>
+<title>Hither and Thither</title>
 <script src="d3/d3.v3.min.js"></script>
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<div id="container" style="position: relative; width: 95%; height: 95%;">
 <h1>Hither and Thither</h1>
-<span id="date"></span>
+<span id="date">None</span>
+<div id="container" style="position: relative; width: 95%; height: 95%;">
 </div>
 <script>
+var width=document.getElementById("container").offsetWidth,
+    height=document.getElementById("container").offsetHeight,
+    projection = d3.geo
+                   .mercator()
+                   .scale(150)
+                   .translate([width / 2, height / 2]);
+var path = d3.geo
+             .path()
+             .pointRadius(2)
+             .projection(projection);
+
 var map = new Datamap({
   element: document.getElementById('container'),
+  projection: 'mercator',
   fills: { "bubble": "#1ff", "x": "#f1f" },
   bubbleConfig: {
             borderWidth: 2,
@@ -33,7 +46,9 @@ d3.csv('data/countries.csv', function(error, csvData) {
   var countries = csvData
     .filter(function (c) {
       return c.country.indexOf("Total") < 0 && c.country.indexOf("Other") < 0;
-    })
+    }),
+    aus = map.latLngToXY(-25.27439, 133.775136);
+
   countries
     .forEach(function (c) {
       var coord = map.latLngToXY(c.latitude,c.longitude);
@@ -42,8 +57,24 @@ d3.csv('data/countries.csv', function(error, csvData) {
     });
   // map.bubbles(countries);
 
+console.log(path({type: "LineString", coordinates: [[-25.27439, 133.775136], [-25,100]]}));
+
   var g = d3.select("svg").append("g");
   var dd = d3.select("#date");
+  var pp = g.selectAll(".route")
+    .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
+    .enter()
+      .append("path")
+/*
+        .datum(function (c) { // var p = ""; console.log(p);
+          return {type: "LineString", coordinates: [[-25.27439, 133.775136], [c.latitude,c.longitude]]}; })
+*/
+        .attr("class", "route")
+        .attr("fill", "none")
+        .attr("stroke", "#ff1")
+        .attr("stroke-width", 20)
+        .attr("d", function(c) { return "M "+aus[0]+" "+aus[1]+" L "+c.x+" "+c.y; });
+
   var cc = g.selectAll(".bub")
     .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
     .enter()
