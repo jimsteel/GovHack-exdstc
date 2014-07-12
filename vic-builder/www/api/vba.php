@@ -5,6 +5,8 @@ define("MYSQL_USER", "root");
 define("MYSQL_PASS", "exdstc");
 define("MYSQL_DB", "vba");
 
+// Building Codes of Australia
+// http://www.renewaustralia.org/diy-resources/development-and-planning-issues/building-uses-as-outlined-by-the-building-code-of-australia/
 define("BUILDING_CODE_HOUSE", 1);
 define("BUILDING_CODE_FLATS", 2);
 define("BUILDING_CODE_HOTELS_DORMS_BACKPACKERS", 3);

@@ -1,4 +1,8 @@
+Query 5 most expensive car parks:
+  select Allotment_Area,Site_street,Site_suburb from vba WHERE Allotment_Area != 0 AND Building_classification_1 LIKE "%7A%" ORDER BY Reported_Cost_of_works DESC LIMIT 5;
 
+Query 5 most expensive developments:
+  select Allotment_Area,Site_street,Site_suburb from vba ORDER BY Reported_Cost_of_works DESC LIMIT 5;
 
 
 
