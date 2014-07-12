@@ -2,18 +2,9 @@
 
 include_once("vba.php");
 
-if($stmt = $mysqli->prepare("SELECT DISTINCT(Site_pcode),Site_suburb FROM vba")) {
+foreach (get_postcodes() as $result) {
 
-	$stmt->execute();
-	$stmt->bind_result($postcode,$suburb);
-
-	$results = array();
-	while ($stmt->fetch()) {
-
-		print "<A HREF='suburb.php?postcode=$postcode'>$suburb ($postcode)</A><BR>\n";
-
-	}
+	$url = "show_suburb.php?postcode=" . $result['postcode'];
+	print "<A HREF='" . $url . "'>" . $result['suburb'] . " (" . $result['postcode'] .")</A><BR>\n";
 
 }
-
-?>
