@@ -4,6 +4,7 @@
 <script src="js/datamaps.world.min.js"></script>
 <div id="container" style="position: relative; width: 95%; height: 95%;">
 <h1>Hither and Thither</h1>
+<span id="date"></span>
 </div>
 <script>
 var map = new Datamap({
@@ -42,6 +43,7 @@ d3.csv('data/countries.csv', function(error, csvData) {
   // map.bubbles(countries);
 
   var g = d3.select("svg").append("g");
+  var dd = d3.select("#date");
   var cc = g.selectAll(".bub")
     .data(countries, function(c,i) { if (c) {return c.country;}else{console.log(i); return c;} })
     .enter()
@@ -58,6 +60,9 @@ d3.csv('data/countries.csv', function(error, csvData) {
 
   d3.csv('data/340109.csv', function(error, months) {
     months.forEach(function (m, i) {
+      dd.transition()
+        .delay(1.5 * i * time)
+        .text(m.month);
       cc.transition()
         .delay(1.5 * i * time)
         .duration(time)
