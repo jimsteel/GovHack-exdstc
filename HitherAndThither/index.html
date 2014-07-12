@@ -37,7 +37,7 @@ var ausLat = [-25.27439, 133.775136],
 
             return {path: path, projection: projection};
         },
-  fills: { defaultFill: '#ABDDA4', "bubble": "#1ff", "x": "#f1f" },
+  fills: { defaultFill: '#ABDDA4' },
   geographyConfig: {
         dataUrl: null, //if not null, datamaps will fetch the map JSON (currently only supports topojson)
         hideAntarctica: false,
@@ -51,20 +51,6 @@ var ausLat = [-25.27439, 133.775136],
         highlightFillColor: '#FC8D59',
         highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
         highlightBorderWidth: 2
-    },
-  bubbleConfig: {
-        borderWidth: 2,
-        borderColor: '#FFFFFF',
-        popupOnHover: false,
-        popupTemplate: function(geography, data) {
-          return '<div class="hoverinfo"><strong>' + data.name + '</strong></div>';
-        },
-        fillOpacity: 0.75,
-        highlightOnHover: true,
-        highlightFillColor: '#FC8D59',
-        highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-        highlightBorderWidth: 2,
-        highlightFillOpacity: 0.85
     }
 });
 
