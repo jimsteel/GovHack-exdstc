@@ -2,6 +2,23 @@
 <title>Hither and Thither</title>
 
 <style>
+.box {
+  position: relative;
+  width: 100%;		/* desired width */
+}
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 40%; 	/* initial ratio of 1:1*/
+}
+.content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .airportC {
   font:32/1 monospace;
   color: white;
@@ -14,9 +31,10 @@
 <script src="d3/d3.v3.min.js"></script>
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<div align=center>
-<div id="title" class="airportC">Hither and Thither: <span id="date">None</span></div>
-<table class="airportC" style="font: 20px/1 monospace;" width="940"><tr>
+
+<div id="outer" align=center>
+<div id="title" class="airportC">Hither and Thither: <span id="date">None</span>
+<table class="airportC" style="font: 20px/1 monospace;" width="80%"><tr>
 <td>
   <input type="radio" name="direction" id="departureDir" value="Departures" checked>Departures
   <input type="radio" name="direction" id="arrivalDir" value="Arrivals">Arrivals
@@ -25,17 +43,20 @@
   <input type="radio" name="period" id="allP" value="Both" checked>Months &amp; Years
   <input type="radio" name="period" id="yearP" value="Year">Years
 </table>
+</div>
 <div>
-<div id="container" style="position: relative; width: 940; height: 500;"></div>
-  <p style="font-size: 14pt; display:inline; list-style-type:square; z-index: 1000; position:relative; bottom:0px; left:0px; width:100px;">
+<div class="box">
+  <div class="content" id="container" style="width:100%;"></div>
+  <p style="font-size: 14pt; display:inline; list-style-type:square; z-index: 1000; position:relative; bottom:-30px; left:0px; width:100px;">
     <span style="text-shadow:0px 0px 2px black; color:#88f">decreasing</span>&nbsp;&nbsp;&nbsp;
     <span style="text-shadow:0px 0px 2px black; color:#ff8">steady</span>&nbsp;&nbsp;&nbsp;
     <span style="text-shadow:0px 0px 2px black; color:#f88">increasing</span>
   </p>
 </div>
-<footer width="900px" align="center">
-<a rel="license" href="http://creativecommons.org/licenses/by/2.5/au/"><img alt="Creative Commons Licence" height="20" style="position:absolute; left:140px; border-width:0" src="https://i.creativecommons.org/l/by/2.5/au/88x31.png" /></a>
-<a style="position:absolute; right:140px; color: #f44" href="credits.html">credits</a>
+</div>
+<footer width="100%" style="margin-top:20px;" align="center">
+<a rel="license" href="http://creativecommons.org/licenses/by/2.5/au/"><img alt="Creative Commons Licence" height="20" style="float:left; border-width:0" src="https://i.creativecommons.org/l/by/2.5/au/88x31.png" /></a>
+<a style="float:right; color: #f44" href="credits.html">credits</a>
 </footer>
 </div>
 <script>
