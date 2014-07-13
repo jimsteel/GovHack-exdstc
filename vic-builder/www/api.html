@@ -7,31 +7,61 @@
 
 <BODY>
 
-<P>
-Web Services for reusing the data. (REST/JSON)
-</P>
+<CENTER>
+<H3>
+REST/JSON Web Services for reusing the data.
+</H3>
+</CENTER>
 
 <CENTER>
-<TABLE WIDTH="80%">
+<TABLE CELLPADDING=10>
 
 <TR>
-<TD CLASS="api_description">List all available postcodes.</TD>
-<TD CLASS="api_endpoint">/api/postcodes.php</TD>
-<TD CLASS="api_example"><CODE>xyz</CODE></TD>
+<TD VALIGN="top" CLASS="api_endpoint">/api/postcodes.php</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_description">List all 728 Victorian suburb names and postcodes.</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_example"><PRE>
+[
+  {"postcode":3121,"suburb":"BURNLEY"},
+  {"postcode":3056,"suburb":"BRUNSWICK"},
+  {"postcode":3960,"suburb":"FOSTER"},
+  ... ];
+</PRE></TD VALIGN="top">
 </TR>
 
 <TR>
-<TD CLASS="api_description">List of entries for a suburb.</TD>
-<TD CLASS="api_endpoint">/api/suburb.php?postcode=1234</TD>
-<TD CLASS="api_example"><CODE>xyz</CODE></TD>
+<TD VALIGN="top" CLASS="api_endpoint">/api/suburb.php?postcode=3228</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_description">List all building activities for a suburb.</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_example"><PRE>
+[
+  {"address":"636 NAUTICAL RISE, TORQUAY 3228","id":570},
+  {"address":"639 LONGSHORE STREET, TORQUAY 3228","id":574},
+  {"address":"661 STRATHMORE DRIVE JAN JUC 3228","id":1223},
+  .... ]
+</PRE></TD VALIGN="top">
 </TR>
 
 <TR>
-<TD CLASS="api_description">An individual entry.</TD>
-<TD CLASS="api_endpoint">/api/entry.php?id=1234</TD>
-<TD CLASS="api_example"><CODE>xyz</CODE></TD>
+<TD VALIGN="top" CLASS="api_endpoint">/api/entry.php?id=12452</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_description">Fetch details about a specific building activity.</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_example"><PRE>
+{
+  "id":12452,
+  "address":"533 MARSDEN AVENUE PASCOE VALE SOUTH 3044"
+}
+</PRE></TD VALIGN="top">
 </TR>
 
+<TR>
+<TD VALIGN="top" CLASS="api_endpoint">/api/revenue.php</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_description">Aggregated revenue distribution per postcode.</TD VALIGN="top">
+<TD VALIGN="top" CLASS="api_example"><PRE>
+[ {"postcode":3076,"year":2012,"revenue":125760091},
+  {"postcode":3076,"year":2013,"revenue":151306482},
+  {"postcode":3076,"year":2014,"revenue":36483003},
+  {"postcode":3078,"year":2009,"revenue":42679495},
+  ... ]
+</PRE></TD VALIGN="top">
+</TR>
 </TABLE>
 </CENTER>
 

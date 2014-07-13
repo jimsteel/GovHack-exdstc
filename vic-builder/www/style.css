@@ -27,15 +27,6 @@ a:active { color: white; }
 }
 
 ########################################
-# Page content
-########################################
-
-.content {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-########################################
 # About page
 ########################################
 
@@ -89,20 +80,53 @@ IMG.spreadsheet {
   background-color: clear;
   width: 100%;
   height: 30px;
+  text-align: center;
   bottom: 35px;
   z-index: 10000001;
+}
+
+.entry_price_ribbon {
+  position: absolute;
+  width: 180px;
+  height: 28px;
+  bottom: 160px;
+  left: 220px;
+  z-index: 10000002;
+  text-weight: bold;
+  font-size: 150%;
+
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.entry_price_gold {
+  background-color: #d0af60;
 }
 
 .gold_border {
   border: 5px solid #d0af60;
 }
 
+.entry_price_red {
+  background-color: #ee0000;
+}
+
 .red_border {
   border: 5px solid #ee0000;
 }
 
+.entry_price_white {
+  background-color: white;
+  color: black;
+}
+
 .white_border {
   border: 5px solid white;
+}
+
+.entry_price_green {
+  background-color: #009231;
 }
 
 .green_border {
@@ -118,6 +142,7 @@ IMG.spreadsheet {
 }
 
 .api_description {
+  font-style: italic;
 }
 
 .api_example {
