@@ -5,7 +5,7 @@
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
 <div style="font-size: 24pt;">Hither and Thither: <span id="date">None</span></div>
-<table width="600"><tr>
+<table width="940"><tr>
 <td>
   <input type="radio" name="direction" id="departureDir" value="Departures" checked>Departures
   <input type="radio" name="direction" id="arrivalDir" value="Arrivals">Arrivals
@@ -13,6 +13,8 @@
   <input type="radio" name="period" id="monthP" value="Month">Months
   <input type="radio" name="period" id="allP" value="Both" checked>Months &amp; Years
   <input type="radio" name="period" id="yearP" value="Year">Years
+<td style="text-align: right; font-size:8pt;">
+<a href="credits.html">credits</a>
 </table>
 <div id="container" style="position: relative; width: 940; height: 500;"></div>
 <ul style="list-style-type:square; position:absolute; top:60px; left:940px; width:100px;">
@@ -23,7 +25,7 @@
 <table id="countries"></table>
 <script>
 
-var ausLat = // [-35.3052,149.1959],/*CAN*/
+var ausLatLong = // [-35.3052,149.1959],/*CAN*/
              // [-33.9398,151.177],/*SYD*/
              // [-28.3934,153.121]/*GC*/,
              [-29.3934,151.121]/*BNE+tweak*/,
@@ -140,6 +142,8 @@ function getPeriod() {
 }
 
 d3.csv('data/countries.csv', function(error, csvData) {
+  csvData.forEach(function (c) { c.latitude = parseFloat(c.latitude); c.longitude = parseFloat(c.longitude); });
+
   d3.csv('data/340105.csv', function(error, arrivalsMonths) {
     d3.csv('data/340109.csv', function(error, departuresMonths) {
       var arrivalsYears = computeYearly(arrivalsMonths);
@@ -169,7 +173,7 @@ function process(csvData, months, arrivals) {
     .filter(function (c) {
       return typeof months[0][c.country] !== "undefined" && c.country.indexOf("Total") < 0 && c.country.indexOf("Other") < 0;
     }),
-    aus = map.latLngToXY(ausLat[0], ausLat[1]);
+    aus = map.latLngToXY(ausLatLong[0], ausLatLong[1]);
 
   countries
     .forEach(function (c) {
@@ -189,6 +193,8 @@ function process(csvData, months, arrivals) {
           .html(function (c) {return c.country;});
   tt.exit().remove();
 */
+
+  var def = {r: 1, c: "gray", po: 0.1, bo: 0.2};
 
   var pp = g.selectAll(".route")
     .data(countries, function(c,i) { return c.country; });
@@ -217,23 +223,16 @@ function process(csvData, months, arrivals) {
     pp.enter()
       .append("path")
         // Note the argument order in the following: LONG, LAT
-        .datum(function(c) {return {type: "LineString", coordinates: [[ausLat[1],ausLat[0]], [c.longitude,c.latitude]]}; })
+        .each(function(c) {c.type="LineString"; c.coordinates=[[ausLatLong[1],ausLatLong[0]], [c.longitude,c.latitude-def.r], [c.longitude,c.latitude+def.r], [ausLatLong[1],ausLatLong[0]]]; })
         .attr("class", "route")
         .style("opacity", 0.3)
-        .style("fill", "none")
-        .style("stroke", "#111")
-        .style("stroke-width", 2)
+        .style("fill", def.c)
+        // .style("stroke", "#111")
+        // .style("stroke-width", 2)
         .attr("d", map.path);
   }
-    pp.enter()
-      .append("path")
-        // Note the argument order in the following: LONG, LAT
-        .datum(function(c) {return {type: "Polygon", coordinates: [[ausLat[1],ausLat[0]], [c.longitude-2,c.latitude], [c.longitude+2,c.latitude], [ausLat[1]-1,ausLat[0]]]}; })
-        .each(function (dd) {console.log(map.path(dd))});
 
   pp.exit().remove();
-
-  var def = {r: 1, c: "gray", po: 0.1, bo: 0.2};
 
   var bub = g.selectAll(".bub")
     .data(countries, function(c,i) { return c.country; });
@@ -302,7 +301,7 @@ function process(csvData, months, arrivals) {
         .duration(flyTime)
         .attr("cx", function(d) { return arrivals ? aus[0] : d.x; })
         .attr("cy", function(d) { return arrivals ? aus[1] : d.y; })
-            .attr("r", function(d) { return bsize(m[d.country])/1.2; })
+        .attr("r", function(d) { return bsize(m[d.country])/1.2; })
         //.attr("r", 3)
         .each("start", function () {
           // reset to Australia
@@ -320,12 +319,28 @@ function process(csvData, months, arrivals) {
             //.attr("r", 2);
         });
 
+if (false) {
+      pp
+        .each(function(c,i) {
+var r = bsize(m[c.country])/6;
+
+var up = c.latitude - r;
+var dn = c.latitude + r;
+
+c.coordinates=[[ausLatLong[1],ausLatLong[0]], [c.longitude,up], [c.longitude,dn], [ausLatLong[1],ausLatLong[0]]];
+})
+        .transition()
+        .delay(resetTime+(i*time))
+        .duration(flyTime)
+        .attr("d", map.path);
+} else {
       pp.transition()
         .delay(resetTime+(i*time))
         .duration(flyTime)
         .attr("points", function(c) {
           return points(aus[0],aus[1],c.x,c.y,bsize(m[c.country]));
         });
+}
 
       // fade destination
       bub.transition()
