@@ -269,10 +269,10 @@ function process(csvData, months, arrivals) {
       .attr("cx", function (c) { return c.x; })
       .attr("cy", function (c) { return c.y; })
       .attr("opacity", 0.7)
-      .attr("stroke", "white")
-      .attr("stroke-width", 2)
+      .attr("stroke", "#ff8")
+      .attr("stroke-width", 4)
       .attr("r", def.r)
-      .style("fill", "#f1f")
+      .style("fill", "#ff8")
       .each(function () { d3.select(this).append("title").text(function(c) { return c.country; }) });
 
   bub.exit()
@@ -376,7 +376,7 @@ c.coordinates=[[ausLatLong[1],ausLatLong[0]], [c.longitude,up], [c.longitude,dn]
       bub.transition()
         .delay(flyTime+(i*time))
         .duration(growTime)
-        .attr("fill-opacity", 0.3)
+        .attr("fill-opacity", 0.7)
         .attr("stroke", function(d) { return bcolor(m,i,d); })
         .style("fill", function(d) { return bcolor(m,i,d); })
         .attr("r", function(d) { return bsize(m[d.country]); });
