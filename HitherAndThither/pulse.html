@@ -5,7 +5,7 @@
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
 <div style="font-size: 24pt;">Hither and Thither: <span id="date">None</span></div>
-<table width="600"><tr>
+<table width="940"><tr>
 <td>
   <input type="radio" name="direction" id="departureDir" value="Departures" checked>Departures
   <input type="radio" name="direction" id="arrivalDir" value="Arrivals">Arrivals
@@ -13,6 +13,8 @@
   <input type="radio" name="period" id="monthP" value="Month">Months
   <input type="radio" name="period" id="allP" value="Both" checked>Months &amp; Years
   <input type="radio" name="period" id="yearP" value="Year">Years
+<td style="text-align: right; font-size:8pt;">
+<a href="credits.html">credits</a>
 </table>
 <div id="container" style="position: relative; width: 940; height: 500;"></div>
 <ul style="list-style-type:square; position:absolute; top:60px; left:940px; width:100px;">
@@ -299,7 +301,7 @@ function process(csvData, months, arrivals) {
         .duration(flyTime)
         .attr("cx", function(d) { return arrivals ? aus[0] : d.x; })
         .attr("cy", function(d) { return arrivals ? aus[1] : d.y; })
-            .attr("r", function(d) { return bsize(m[d.country])/1.2; })
+        .attr("r", function(d) { return bsize(m[d.country])/1.2; })
         //.attr("r", 3)
         .each("start", function () {
           // reset to Australia
