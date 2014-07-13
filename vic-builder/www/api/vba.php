@@ -123,7 +123,6 @@ function print_html_header() {
  */
 
 function print_entry_html($entry, $canvasId, $border) {
-
 ?>
 
 <DIV CLASS="entry_dropshadow">
@@ -192,7 +191,7 @@ function initialize() {
       );
        
     } else {
-      alert('Geocode was not successful for the following reason: ' + status);
+      //alert('Geocode was not successful for the following reason: ' + status);
     }
   });
 
@@ -202,8 +201,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
 
-<?PHP
-
-} 
-
-?>
+<?PHP } ?>
