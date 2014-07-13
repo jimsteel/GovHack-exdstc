@@ -144,6 +144,32 @@ function get_reported_cost_of_works() {
 
 }
 
+function get_cost() {
+    global $mysqli;
+
+        if($stmt = $mysqli->prepare("SELECT Site_suburb, site_pcode, YEAR(permit_date), MONTH(permit_date),  SUM(Reported_Cost_of_works) FROM vba WHERE permit_date > '2009-01-01' GROUP BY site_pcode, YEAR(permit_date), MONTH(permit_date)")) {
+
+                $stmt->execute();
+                $stmt->bind_result($suburb, $postcode, $year, $month, $revenue);
+
+                $results = array();
+
+                while ($stmt->fetch()) {
+                        $mm = intval($month);
+                        $dd = strval($year);
+                        if($mm > 1) $dd = $dd . '.' . ($mm - 1);
+                        $next = array( "postcode" => $postcode, "year" => $dd, "revenue" => $revenue, "suburb" => $suburb);
+                        array_push($results, $next);
+
+                }
+
+                return $results;
+
+        }
+
+        return NULL;
+}
+
 
 /**
  *  Gets an entry.

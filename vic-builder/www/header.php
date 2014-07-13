@@ -21,44 +21,42 @@
 <IMG SRC="images/logo.png" WIDTH=297 HEIGHT=309>
 </TD>
 
-<TD WIDTH="400">
+<TD WIDTH="400" VALIGN="top">
 
 <P>
-Want easy access to Victorian building renovation costs?
+<H3>Easy access to Victorian building activity?</H3>
 </P>
 
 <P>
+<em>
 Some people trawl for it,<BR>
 Some people haul for it.<BR>
 There sure is a call for it.<BR>
+</em>
 </P>
 
 <P>
-Matter of fact, you can get it now.
+<em>Matter of fact, you can get it <b>now<b>!</em>
 </P>
 
-<P>
-Explore all 537,631 building modifications across Victoria since 2009.
-</P>
+<script>
+var targetContainer = parent.content;
+</script>
+<?PHP
+include_once("filter.php");
+?>
+
+<P STYLE="height: 2px;"></P>
 
 <A TARGET="content" HREF="explore.php">EXPLORE</A> |
-<A TARGET="content" HREF="api/show_postcodes.php">SEARCH</A> |
-<A TARGET="content" HREF="stats.html">REVENUE DISTRIBUTION</A> |
-<A TARGET="content" HREF="api.html">API</A>
+<!-- <A TARGET="content" HREF="api/show_postcodes.php">SEARCH</A> |-->
+<A TARGET="content" HREF="stats.html">EXPENDITURE GRAPH</A> |
+<A TARGET="content" HREF="api.html">API</A> |
 <A TARGET="content" HREF="about.html">ABOUT</A>
 
 </TD>
 
 </TR>
-
-<tr>
-<td colspan="2">
-<?PHP
-include_once("filter.php");
-?>
-</td>
-</tr>
-
 </TABLE>
 
 </CENTER>
