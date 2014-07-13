@@ -39,6 +39,11 @@ IMG.spreadsheet {
   height: 200px;
 }
 
+IMG.screenshot {
+  width: 300px;
+  height: 200px;
+}
+
 ########################################
 # A streetview box
 ########################################

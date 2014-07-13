@@ -8,9 +8,11 @@
 <BODY>
 
 <CENTER>
-<H3>
-REST/JSON Web Services for reusing the data.
-</H3>
+<P STYLE="height: 20px">
+</P>
+<P>
+We read the data into MySQL and exposed it as a REST/JSON web service:
+</P>
 </CENTER>
 
 <CENTER>
@@ -55,10 +57,8 @@ REST/JSON Web Services for reusing the data.
 <TD VALIGN="top" CLASS="api_endpoint">/api/revenue.php</TD VALIGN="top">
 <TD VALIGN="top" CLASS="api_description">Aggregated revenue distribution per postcode.</TD VALIGN="top">
 <TD VALIGN="top" CLASS="api_example"><PRE>
-[ {"postcode":3076,"year":2012,"revenue":125760091},
-  {"postcode":3076,"year":2013,"revenue":151306482},
-  {"postcode":3076,"year":2014,"revenue":36483003},
-  {"postcode":3078,"year":2009,"revenue":42679495},
+[ {"postcode":3076,"year":2012,"revenue":125760091, "suburb":"EPPING"},
+  {"postcode":3126,"year":2010,"revenue":61617634, "suburb":"CANTERBURY"},
   ... ]
 </PRE></TD VALIGN="top">
 </TR>

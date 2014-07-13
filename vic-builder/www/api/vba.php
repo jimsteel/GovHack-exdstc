@@ -89,16 +89,16 @@ function get_reported_cost_of_works() {
 
 	global $mysqli;
 
-	if($stmt = $mysqli->prepare("SELECT site_pcode, YEAR(permit_date), SUM(Reported_Cost_of_works) FROM vba GROUP BY site_pcode, YEAR(permit_date)")) {
+	if($stmt = $mysqli->prepare("SELECT Site_suburb, site_pcode, YEAR(permit_date), SUM(Reported_Cost_of_works) FROM vba WHERE permit_date > '2008-01-01' GROUP BY site_pcode, YEAR(permit_date)")) {
 
 	        $stmt->execute();
-	        $stmt->bind_result($postcode, $year, $revenue);
+	        $stmt->bind_result($suburb, $postcode, $year, $revenue);
 
 	        $results = array();
 
 	        while ($stmt->fetch()) {
 
-			$next = array( "postcode" => $postcode, "year" => $year, "revenue" => $revenue);
+			$next = array( "postcode" => $postcode, "year" => $year, "revenue" => $revenue, "suburb" => $suburb);
 	                array_push($results, $next);
 
 	        }
@@ -108,7 +108,6 @@ function get_reported_cost_of_works() {
 	}
 
 	return NULL;
-
 
 }
 
@@ -120,18 +119,18 @@ function get_entry($id) {
 
 	global $mysqli;
 
-	if($stmt = $mysqli->prepare("SELECT id, Site_street, Site_suburb, Allotment_Area, Site_pcode FROM vba WHERE id = ?")) {
+	if($stmt = $mysqli->prepare("SELECT id, Site_street, Site_suburb, Allotment_Area, Site_pcode, Reported_Cost_of_works FROM vba WHERE id = ?")) {
 	
 	        $stmt->bind_param('i', $id);
 	        $stmt->execute();
-	        $stmt->bind_result($id, $street, $suburb, $allotment, $postcode);
+	        $stmt->bind_result($id, $street, $suburb, $allotment, $postcode, $cost);
 
 	        $results = array();
 
 	        while ($stmt->fetch()) {
 
 	                $address = $allotment . " " . $street . " " . $suburb . " " . $postcode;
-			return array( "id" => $id, "address" => $address );
+			return array( "id" => $id, "address" => $address, "cost" => $cost );
 
 	        }
 
@@ -161,7 +160,7 @@ function print_entry_html($entry, $canvasId, $border) {
 <DIV CLASS="entry map-canvas <?PHP print $border; ?>_border" ID="<?PHP print $canvasId; ?>">
 <SPAN CLASS="entry_description_ribbon"></SPAN>
 <SPAN CLASS="entry_description"><?PHP print $entry["address"]; ?>
-<SPAN CLASS="entry_price_ribbon entry_price_<?PHP print $border; ?>">$5000</SPAN>
+<SPAN CLASS="entry_price_ribbon entry_price_<?PHP print $border; ?>">$<?PHP print $entry["cost"]; ?></SPAN>
 </DIV>
 </DIV>
 
