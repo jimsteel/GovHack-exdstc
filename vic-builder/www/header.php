@@ -2,7 +2,8 @@
 
 <HEAD>
   <TITLE>Victoria Builder</TITLE>
-  <LINK REL="stylesheet" TYPE="text/css" HREF="style.css">
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <LINK REL="stylesheet" TYPE="text/css" HREF="style.css" />
 </HEAD>
 
 <BODY>
@@ -42,13 +43,21 @@ Explore all 537,631 building modifications across Victoria since 2009.
 
 <A TARGET="content" HREF="explore.php">EXPLORE</A> |
 <A TARGET="content" HREF="api/show_postcodes.php">SEARCH</A> |
-<A TARGET="content" HREF="revenue.php">REVENUE DISTRIBUTION</A> |
+<A TARGET="content" HREF="stats.html">REVENUE DISTRIBUTION</A> |
 <A TARGET="content" HREF="api.html">API</A>
 <A TARGET="content" HREF="about.html">ABOUT</A>
 
 </TD>
 
 </TR>
+
+<tr>
+<td colspan="2">
+<?PHP
+include_once("filter.php");
+?>
+</td>
+</tr>
 
 </TABLE>
 

@@ -18,7 +18,12 @@
 <?PHP
 
 $entry = get_entry($_GET["id"]);
-print_entry_html($entry, "map-canvas-1", "gold");
+
+# Pick a random colour
+$colours = [ "gold", "red", "green", "white"];
+$r = rand(0, 3);
+
+print_entry_html($entry, "map-canvas-1", $colours[$r]);
 
 ?>
 

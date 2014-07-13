@@ -32,7 +32,7 @@ function get_postcodes() {
 
 	global $mysqli;
 
-	if($stmt = $mysqli->prepare("SELECT DISTINCT(Site_pcode),Site_suburb FROM vba")) {
+	if($stmt = $mysqli->prepare("SELECT DISTINCT(Site_pcode),Site_suburb FROM vba WHERE (Site_suburb IS NOT NULL OR TRIM(Site_suburb)='')  ORDER BY Site_suburb")) {
 
 	        $stmt->execute();
 	        $stmt->bind_result($postcode,$suburb);
@@ -80,6 +80,39 @@ function get_all_in_suburb($postcode) {
 	return NULL;
 
 }
+
+/**
+ *  Gets the top twenty most expensive renovations.
+ */
+function get_top_20_renovations() {
+
+        global $mysqli;
+
+        if($stmt = $mysqli->prepare("SELECT id, Allotment_Area,Site_street,Site_suburb from vba WHERE Building_classification_1 LIKE '%7A%' AND Allotment_Area != 0 AND Allotment_Area < 10000 ORDER BY Reported_Cost_of_works DESC LIMIT 10;")) {
+
+                $stmt->execute();
+                $stmt->bind_result($id, $allotment, $street, $suburb);
+
+                $results = array();
+
+                while ($stmt->fetch()) {
+
+                        $address = $allotment . " " . $street . " " . $suburb . " " . $postcode;
+                        $next = array( "address" => $address, "id" => $id);
+                        array_push($results, $next);
+
+                }
+
+                return $results;
+
+        }
+
+        return NULL;
+
+}
+
+
+
 
 /**
  *  Gets an entry.
@@ -154,13 +187,20 @@ function print_html_header() {
  */
 
 function print_entry_html($entry, $canvasId, $border) {
+
+  $cost = $entry["cost"];
+
+  if ($cost > 1000000) {
+    $cost = round($cost / 1000000) . "M";
+  }
+
 ?>
 
 <DIV CLASS="entry_dropshadow">
 <DIV CLASS="entry map-canvas <?PHP print $border; ?>_border" ID="<?PHP print $canvasId; ?>">
 <SPAN CLASS="entry_description_ribbon"></SPAN>
 <SPAN CLASS="entry_description"><?PHP print $entry["address"]; ?>
-<SPAN CLASS="entry_price_ribbon entry_price_<?PHP print $border; ?>">$<?PHP print $entry["cost"]; ?></SPAN>
+<SPAN CLASS="entry_price_ribbon entry_price_<?PHP print $border; ?>">$<?PHP print $cost; ?></SPAN>
 </DIV>
 </DIV>
 
