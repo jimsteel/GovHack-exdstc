@@ -1,28 +1,43 @@
-<html style="background: #eee; font-family: helvetica;">
+<html style="background: #444; font-family: monospace;">
 <title>Hither and Thither</title>
+
+<style>
+.airportC {
+  font:32/1 monospace;
+  color: white;
+  background: #444;
+  display: block;
+  margin-right: 1px;
+}
+</style>
 
 <script src="d3/d3.v3.min.js"></script>
 <script src="d3/topojson.v1.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<div style="font-size: 24pt;">Hither and Thither: <span id="date">None</span></div>
-<table width="940"><tr>
+<div align=center>
+<div id="title" class="airportC">Hither and Thither: <span id="date">None</span></div>
+<table class="airportC" style="font: 20px/1 monospace;" width="940"><tr>
 <td>
   <input type="radio" name="direction" id="departureDir" value="Departures" checked>Departures
   <input type="radio" name="direction" id="arrivalDir" value="Arrivals">Arrivals
-<td>
+<td style="text-align: right">
   <input type="radio" name="period" id="monthP" value="Month">Months
   <input type="radio" name="period" id="allP" value="Both" checked>Months &amp; Years
   <input type="radio" name="period" id="yearP" value="Year">Years
-<td style="text-align: right; font-size:8pt;">
-<a href="credits.html">credits</a>
 </table>
+<div>
 <div id="container" style="position: relative; width: 940; height: 500;"></div>
-<ul style="list-style-type:square; position:absolute; top:60px; left:940px; width:100px;">
-  <li style="color:#11f">decreasing</li>
-  <li style="text-shadow:0px 0px 2px black; color:#ff1">steady</li>
-  <li style="color:#f11">increasing</li>
-</ul>
-<table id="countries"></table>
+  <p style="font-size: 14pt; display:inline; list-style-type:square; z-index: 1000; position:relative; bottom:0px; left:0px; width:100px;">
+    <span style="text-shadow:0px 0px 2px black; color:#88f">decreasing</span>&nbsp;&nbsp;&nbsp;
+    <span style="text-shadow:0px 0px 2px black; color:#ff8">steady</span>&nbsp;&nbsp;&nbsp;
+    <span style="text-shadow:0px 0px 2px black; color:#f88">increasing</span>
+  </p>
+</div>
+<footer width="900px" align="center">
+<a rel="license" href="http://creativecommons.org/licenses/by/2.5/au/"><img alt="Creative Commons Licence" height="20" style="position:absolute; left:140px; border-width:0" src="https://i.creativecommons.org/l/by/2.5/au/88x31.png" /></a>
+<a style="position:absolute; right:140px; color: #f44" href="credits.html">credits</a>
+</footer>
+</div>
 <script>
 
 var ausLatLong = // [-35.3052,149.1959],/*CAN*/
@@ -68,6 +83,14 @@ var ausLatLong = // [-35.3052,149.1959],/*CAN*/
 var dd = d3.select("#date");
 var svg = d3.select("svg");
 var g = svg.append("g");
+
+function addText(sel, txt) {
+  sel.style("background", "white");
+  sel.selectAll("span .airportC").remove();
+  txt.split("").forEach(function (c) {sel.append("span").attr("class", "airportC").text(c === " " ? "." : c)})
+}
+
+// addText(d3.select("#title"), "Hither and Thither: ");
 
 function computeYearly(months) {
   var years = [], currentY = "", totals, count = 0;
@@ -280,11 +303,11 @@ function process(csvData, months, arrivals) {
     var thisSize = bsize(m[d.country]),
         prevSize = i == 0 ? thisSize : bsize(months[i-1][d.country]);
     if (thisSize / prevSize > 1.1) {
-      return "#f11";
+      return "#f88";
     } else if (thisSize / prevSize < 0.9) {
-      return "#11f";
+      return "#88f";
     } else {
-      return "#ff1";
+      return "#ff8";
     }
   }
 
