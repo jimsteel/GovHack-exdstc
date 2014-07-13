@@ -6,7 +6,7 @@
   <LINK REL="stylesheet" TYPE="text/css" HREF="style.css" />
 </HEAD>
 
-<BODY>
+<BODY class="no-overflow">
 
 <CENTER>
 

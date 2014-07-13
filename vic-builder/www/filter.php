@@ -1,7 +1,7 @@
-<div id="search_container" class="centered" style="background-color:#D0AF60;border-radius:25px;padding:10px;box-shadow:1px 1px 2px black">
+<div id="search_container" class="centered" >
 <div id="search_content_container" >
 <span>Search 537,631 Victorian suburbs:</span>
-<select id='postcodes' style="width:100%">
+<select id='postcodes' class= "full-width">
 <?PHP
 
 include_once("api/vba.php");
@@ -16,7 +16,7 @@ foreach (get_postcodes() as $result) {
 ?>
 </select>
 <br>
-<select id="addresses" style="width: 100%"></select><BR>
+<select id="addresses" class="full-width"></select><BR>
 <script>
 String.prototype.capitalize = function() {
     return this.toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
@@ -29,7 +29,7 @@ String.prototype.capitalize = function() {
 		});
 			var updateDropdown = function (data) {
 				$('#addresses').empty().append(function() {
-				var output = "<option value = '' >Please selected address</option>";
+				var output = "<option value = '' >Please select an address</option>";
 				$.each(JSON.parse(data), function(i, row) {
 output += '<option value="api/show_entry.php?id=' + row['id'] + '">' + row['address'].capitalize() + '</option>';
 				});

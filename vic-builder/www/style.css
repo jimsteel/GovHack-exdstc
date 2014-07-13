@@ -5,9 +5,9 @@ body {
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-a:link { color: white; text-decoration: none; }
-a:visited { color: white; }
-a:hover { color: #d0af60; }
+a:link { color: #d0af60; text-decoration: none; text-weight: bold; }
+a:visited { color: #d0af60; text-weight: bold; }
+a:hover { color: white; }
 a:active { color: white; }
 
 ########################################
@@ -29,6 +29,19 @@ a:active { color: white; }
 
 .centered {
 	margin-left:auto;margin-right:auto
+}
+
+#search_container {
+background-color:#D0AF60;
+border-radius:25px;padding:10px;box-shadow:1px 1px 2px black;
+}
+
+.no-overflow {
+	overflow:hidden
+}
+
+.full-width {
+ width: 100%
 }
 
 ########################################
