@@ -15,6 +15,14 @@
 <TR>
 <TD>
 
+<CENTER>
+<P>
+<H2>
+Top 10 building expenditures in Victoria, between 2009 and 2014.
+</H2>
+</P>
+</CENTER>
+
 <?PHP
 
 /*
@@ -39,9 +47,9 @@ foreach (get_top_20_renovations() as $next) {
   $entry = get_entry($next["id"]);
   $uniqueId = "map-canvas-" . $i++;
 
-  # Pick a random colour
-  $colours = [ "gold", "red", "green", "white"];
-  $r = rand(0, 3);
+  # Pick a random colour (tending towards gold/red)
+  $colours = [ "gold", "gold", "red", "red", "green", "white"];
+  $r = rand(0, 5);
 
   print_entry_html($entry, $uniqueId, $colours[$r]);
 
