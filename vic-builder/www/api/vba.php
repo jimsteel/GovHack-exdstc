@@ -122,9 +122,17 @@ function print_html_header() {
  * Prints an entry HTML.
  */
 
-function print_entry_html($entry, $canvasId) {
+function print_entry_html($entry, $canvasId, $border) {
 
 ?>
+
+<DIV CLASS="entry_dropshadow">
+<DIV CLASS="entry map-canvas <?PHP print $border; ?>" ID="<?PHP print $canvasId; ?>">
+<SPAN CLASS="entry_description_ribbon"></SPAN>
+<SPAN CLASS="entry_description"><?PHP print $entry["address"]; ?>
+</DIV>
+</DIV>
+
     <script>
 var geocoder;
 function initialize() {
