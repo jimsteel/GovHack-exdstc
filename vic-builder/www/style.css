@@ -27,6 +27,15 @@ a:active { color: white; }
 }
 
 ########################################
+# Page content
+########################################
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+########################################
 # About page
 ########################################
 
@@ -43,6 +52,11 @@ IMG.spreadsheet {
 # A streetview box
 ########################################
 
+.map-canvas {
+  width: 350;
+  height: 245;
+}
+
 .entry_dropbox {
   width: 400;
   height: 300;
@@ -51,6 +65,8 @@ IMG.spreadsheet {
 }
 
 .entry {
+  float: left;
+  margin: 30px;
   position: relative;
   width: 350;
   height: 245;
@@ -60,11 +76,12 @@ IMG.spreadsheet {
 .entry_description_ribbon {
   position: absolute;
   background-color: black;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
   width: 100%;
   height: 50px;
-  bottom: 50px;
+  bottom: 30px;
+  z-index: 10000000;
 }
 
 .entry_description {
@@ -72,7 +89,8 @@ IMG.spreadsheet {
   background-color: clear;
   width: 100%;
   height: 30px;
-  bottom: 55px;
+  bottom: 35px;
+  z-index: 10000001;
 }
 
 .gold_border {

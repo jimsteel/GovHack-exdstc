@@ -109,4 +109,96 @@ function get_entry($id) {
 
 }
 
+/**
+ *  Prints HTML headers
+ */
+function print_html_header() {
 ?>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<?PHP
+}
+
+/**
+ * Prints an entry HTML.
+ */
+
+function print_entry_html($entry, $canvasId, $border) {
+?>
+
+<DIV CLASS="entry_dropshadow">
+<DIV CLASS="entry map-canvas <?PHP print $border; ?>" ID="<?PHP print $canvasId; ?>">
+<SPAN CLASS="entry_description_ribbon"></SPAN>
+<SPAN CLASS="entry_description"><?PHP print $entry["address"]; ?>
+</DIV>
+</DIV>
+
+    <script>
+var geocoder;
+function initialize() {
+  geocoder = new google.maps.Geocoder();
+  
+  var address = "<?PHP global $entry; print $entry["address"]; ?>";
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var latLng = results[0].geometry.location;
+      console.log("Location latlong: " + latLng);
+      
+      // Get panorama by location
+      var service = new google.maps.StreetViewService();
+      service.getPanoramaByLocation(
+          latLng, 
+          50, 
+          function(data, status) {
+              console.log("Panorama location status: "+status);
+              if(status == google.maps.StreetViewStatus.OK) {
+                  var panoramaLatLng = data.location.latLng;
+                  var heading = google.maps.geometry.spherical.computeHeading(panoramaLatLng, latLng);
+                  var panoramaOptions = {
+                      position: panoramaLatLng,
+                      pov: {
+                         heading: heading,
+                         pitch: 0
+                      },
+                      zoom: 1,
+                      linksControl: false,
+                      panControl: false,
+                      addressControl: false,
+                      zoomControl: false
+                  };
+                  var myPano = new google.maps.StreetViewPanorama(
+                      document.getElementById('<?PHP print $canvasId; ?>'),
+                      panoramaOptions);
+                  myPano.setVisible(true);
+             } else {
+                var panoramaOptions = {
+                      position: latLng,
+                      pov: {
+                         heading: 0,
+                         pitch: 0
+                      },
+                      zoom: 1,
+                      linksControl: false,
+                      panControl: false,
+                      addressControl: false,
+                      zoomControl: false
+                  };
+                  var myPano = new google.maps.StreetViewPanorama(
+                      document.getElementById('<?PHP print $canvasId; ?>'),
+                      panoramaOptions);
+                  myPano.setVisible(true);
+             }
+          }
+      );
+       
+    } else {
+      //alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+<?PHP } ?>
